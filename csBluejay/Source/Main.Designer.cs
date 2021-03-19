@@ -128,8 +128,13 @@ namespace BlueJay
             this.txtMassResults = new System.Windows.Forms.TextBox();
             this.btnMassCalculate = new System.Windows.Forms.Button();
             this.btnMassClear = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.gpbMassControls = new System.Windows.Forms.GroupBox();
             this.cboMassTo = new System.Windows.Forms.ComboBox();
+            this.lblMassFrom = new System.Windows.Forms.Label();
+            this.lblMassTo = new System.Windows.Forms.Label();
+            this.lblMassResult = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -141,7 +146,7 @@ namespace BlueJay
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.gpbMassControls.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -291,6 +296,8 @@ namespace BlueJay
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Location = new System.Drawing.Point(12, 36);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1325,16 +1332,19 @@ namespace BlueJay
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.tabPage4.Controls.Add(this.lblMassResult);
+            this.tabPage4.Controls.Add(this.lblMassTo);
+            this.tabPage4.Controls.Add(this.lblMassFrom);
             this.tabPage4.Controls.Add(this.txtMassResults);
             this.tabPage4.Controls.Add(this.cboMassTo);
             this.tabPage4.Controls.Add(this.cboMassFrom);
-            this.tabPage4.Controls.Add(this.groupBox5);
+            this.tabPage4.Controls.Add(this.gpbMassControls);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(621, 280);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Mass";
+            this.tabPage4.Text = "Weight";
             // 
             // label19
             // 
@@ -1351,16 +1361,28 @@ namespace BlueJay
             // 
             this.cboMassFrom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cboMassFrom.FormattingEnabled = true;
+            this.cboMassFrom.Items.AddRange(new object[] {
+            "milligrams (mg)",
+            "grams (g)",
+            "kilogram (Kg)",
+            "1 tonne (t) metric ton",
+            "Ounces (oz)",
+            "Pounds (lbs)",
+            "Stones (st)",
+            "imperial ton (UK)",
+            "imperial ton (US)"});
             this.cboMassFrom.Location = new System.Drawing.Point(141, 36);
             this.cboMassFrom.Name = "cboMassFrom";
             this.cboMassFrom.Size = new System.Drawing.Size(377, 21);
             this.cboMassFrom.TabIndex = 0;
+            this.cboMassFrom.Text = "Select From:";
             // 
             // txtMassResults
             // 
             this.txtMassResults.BackColor = System.Drawing.Color.Gray;
             this.txtMassResults.Location = new System.Drawing.Point(141, 138);
             this.txtMassResults.Name = "txtMassResults";
+            this.txtMassResults.ReadOnly = true;
             this.txtMassResults.Size = new System.Drawing.Size(377, 20);
             this.txtMassResults.TabIndex = 1;
             // 
@@ -1373,6 +1395,7 @@ namespace BlueJay
             this.btnMassCalculate.TabIndex = 2;
             this.btnMassCalculate.Text = "Calculate";
             this.btnMassCalculate.UseVisualStyleBackColor = true;
+            this.btnMassCalculate.Click += new System.EventHandler(this.btnMassCalculate_Click);
             // 
             // btnMassClear
             // 
@@ -1383,25 +1406,86 @@ namespace BlueJay
             this.btnMassClear.TabIndex = 3;
             this.btnMassClear.Text = "Clear";
             this.btnMassClear.UseVisualStyleBackColor = true;
+            this.btnMassClear.Click += new System.EventHandler(this.btnMassClear_Click);
             // 
-            // groupBox5
+            // gpbMassControls
             // 
-            this.groupBox5.Controls.Add(this.btnMassClear);
-            this.groupBox5.Controls.Add(this.btnMassCalculate);
-            this.groupBox5.Location = new System.Drawing.Point(141, 185);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(377, 66);
-            this.groupBox5.TabIndex = 4;
-            this.groupBox5.TabStop = false;
+            this.gpbMassControls.Controls.Add(this.btnMassClear);
+            this.gpbMassControls.Controls.Add(this.btnMassCalculate);
+            this.gpbMassControls.Location = new System.Drawing.Point(141, 185);
+            this.gpbMassControls.Name = "gpbMassControls";
+            this.gpbMassControls.Size = new System.Drawing.Size(377, 66);
+            this.gpbMassControls.TabIndex = 4;
+            this.gpbMassControls.TabStop = false;
             // 
             // cboMassTo
             // 
             this.cboMassTo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cboMassTo.FormattingEnabled = true;
+            this.cboMassTo.Items.AddRange(new object[] {
+            "milligrams (mg)",
+            "grams (g)",
+            "kilogram (Kg)",
+            "1 tonne (t) metric ton",
+            "Ounces (oz)",
+            "Pounds (lbs)",
+            "Stones (st)",
+            "imperial ton (UK)",
+            "imperial ton (US)"});
             this.cboMassTo.Location = new System.Drawing.Point(141, 86);
             this.cboMassTo.Name = "cboMassTo";
             this.cboMassTo.Size = new System.Drawing.Size(377, 21);
             this.cboMassTo.TabIndex = 0;
+            this.cboMassTo.Text = "Select To:";
+            // 
+            // lblMassFrom
+            // 
+            this.lblMassFrom.AutoSize = true;
+            this.lblMassFrom.ForeColor = System.Drawing.Color.White;
+            this.lblMassFrom.Location = new System.Drawing.Point(148, 20);
+            this.lblMassFrom.Name = "lblMassFrom";
+            this.lblMassFrom.Size = new System.Drawing.Size(33, 13);
+            this.lblMassFrom.TabIndex = 5;
+            this.lblMassFrom.Text = "From:";
+            // 
+            // lblMassTo
+            // 
+            this.lblMassTo.AutoSize = true;
+            this.lblMassTo.ForeColor = System.Drawing.Color.White;
+            this.lblMassTo.Location = new System.Drawing.Point(148, 70);
+            this.lblMassTo.Name = "lblMassTo";
+            this.lblMassTo.Size = new System.Drawing.Size(23, 13);
+            this.lblMassTo.TabIndex = 5;
+            this.lblMassTo.Text = "To:";
+            // 
+            // lblMassResult
+            // 
+            this.lblMassResult.AutoSize = true;
+            this.lblMassResult.ForeColor = System.Drawing.Color.White;
+            this.lblMassResult.Location = new System.Drawing.Point(148, 122);
+            this.lblMassResult.Name = "lblMassResult";
+            this.lblMassResult.Size = new System.Drawing.Size(40, 13);
+            this.lblMassResult.TabIndex = 5;
+            this.lblMassResult.Text = "Result:";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(621, 280);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Pressure";
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(621, 280);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Area";
             // 
             // Main
             // 
@@ -1442,7 +1526,7 @@ namespace BlueJay
             this.groupBox2.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
+            this.gpbMassControls.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1548,9 +1632,14 @@ namespace BlueJay
         private System.Windows.Forms.TextBox txtMassResults;
         private System.Windows.Forms.ComboBox cboMassTo;
         private System.Windows.Forms.ComboBox cboMassFrom;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox gpbMassControls;
         private System.Windows.Forms.Button btnMassClear;
         private System.Windows.Forms.Button btnMassCalculate;
+        private System.Windows.Forms.Label lblMassResult;
+        private System.Windows.Forms.Label lblMassTo;
+        private System.Windows.Forms.Label lblMassFrom;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
     }
 }
 

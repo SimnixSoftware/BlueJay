@@ -40,7 +40,7 @@ namespace BlueJay
         private Int64 i64BinaryLength = 8;
         private bool nonNumberEntered;
         //private const int BLACK = 0;
-        //private const int ERROR = 1;
+        private const int ERROR = 1;
         //private const int WARNING = 2;
         //private const int MESSAGE = 3;
 
@@ -1833,6 +1833,24 @@ public Main()
                 btnRoman_Calculate.Enabled = true;
             }
         }
+
+        #endregion
+
+        #region Mass
+
+        private void btnMassCalculate_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void btnMassClear_Click(object sender, EventArgs e)
+        {
+            cboMassFrom.Text = "Select from";
+            cboMassTo.Text = "Select To";
+            txtMassResults.Text = "";
+        }
+
 
         #endregion
     }
