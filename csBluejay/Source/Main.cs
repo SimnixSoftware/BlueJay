@@ -59,7 +59,7 @@ public Main()
             txtRoman_Input.CharacterCasing = CharacterCasing.Upper;
             txtHex.CharacterCasing = CharacterCasing.Upper;
 
-            Global.DevelopmentWarning = " (ALPHA - Not for public use)";  // development message
+            Global.DevelopmentWarning = " (DEBUG ONLY - Not for public use)";  // development message
 #if DEBUG
             Global.DevelopmentModeSwitch = true;   // turns development warning on
 #else
@@ -1638,17 +1638,17 @@ public Main()
         /// <param name="e"></param>
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (tabControl1.SelectedTab == tabPage1)
+            if (tabControl1.SelectedTab == tabBaseConversion)
             {
                 txtDec.Focus();
             }
 
-            if (tabControl1.SelectedTab == tabPage2)
+            if (tabControl1.SelectedTab == tabBinaryArithmetic)
             {
                 txtBinSource1.Focus();
             }
 
-            if (tabControl1.SelectedTab == tabPage3)
+            if (tabControl1.SelectedTab == tabRoman)
             {
                 txtRoman_Input.Focus();
             }
