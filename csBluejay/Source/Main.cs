@@ -8,10 +8,8 @@
 //  has binary arithmetic tab and decimal to roman tabs.
 //
 // IDE: Microsoft Visual Studio 2012 Professional
-// Language: C# 4.0
+// Language: C# 7.0
 //
-// $Id: Main.cs 1162 2014-07-28 23:12:00Z snixon $
-// $URL: svn://sys2k/svnrepos/Software_Development/Projects/Visual_Studio/BlueJay/trunk/Source/Main.cs $
 /////////////////////////////////////////////////////////////////////////////
 
 using System;

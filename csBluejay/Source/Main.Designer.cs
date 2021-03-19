@@ -122,6 +122,14 @@ namespace BlueJay
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.cboMassFrom = new System.Windows.Forms.ComboBox();
+            this.txtMassResults = new System.Windows.Forms.TextBox();
+            this.btnMassCalculate = new System.Windows.Forms.Button();
+            this.btnMassClear = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cboMassTo = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -132,6 +140,8 @@ namespace BlueJay
             this.tabPage3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -162,7 +172,7 @@ namespace BlueJay
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -180,14 +190,14 @@ namespace BlueJay
             // BinaryLimit_8bit_ToolStripMenuItem
             // 
             this.BinaryLimit_8bit_ToolStripMenuItem.Name = "BinaryLimit_8bit_ToolStripMenuItem";
-            this.BinaryLimit_8bit_ToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.BinaryLimit_8bit_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.BinaryLimit_8bit_ToolStripMenuItem.Text = "Binary Limit 8 bit";
             this.BinaryLimit_8bit_ToolStripMenuItem.Click += new System.EventHandler(this.BinaryLimit_8bit_ToolStripMenuItem_Click);
             // 
             // BinaryLimit_16bit_ToolStripMenuItem
             // 
             this.BinaryLimit_16bit_ToolStripMenuItem.Name = "BinaryLimit_16bit_ToolStripMenuItem";
-            this.BinaryLimit_16bit_ToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.BinaryLimit_16bit_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.BinaryLimit_16bit_ToolStripMenuItem.Text = "Binary Limit 16 bit";
             this.BinaryLimit_16bit_ToolStripMenuItem.Click += new System.EventHandler(this.BinaryLimit_16bit_ToolStripMenuItem_Click);
             // 
@@ -195,7 +205,7 @@ namespace BlueJay
             // 
             this.BinaryLimit_32bit_ToolStripMenuItem.Name = "BinaryLimit_32bit_ToolStripMenuItem";
             this.BinaryLimit_32bit_ToolStripMenuItem.ShowShortcutKeys = false;
-            this.BinaryLimit_32bit_ToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.BinaryLimit_32bit_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.BinaryLimit_32bit_ToolStripMenuItem.Text = "Binary Limit 32 bit";
             this.BinaryLimit_32bit_ToolStripMenuItem.Click += new System.EventHandler(this.BinaryLimit_32bit_ToolStripMenuItem_Click);
             // 
@@ -214,19 +224,19 @@ namespace BlueJay
             // f1ToolStripMenuItem
             // 
             this.f1ToolStripMenuItem.Name = "f1ToolStripMenuItem";
-            this.f1ToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.f1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.f1ToolStripMenuItem.Text = "&F1";
             this.f1ToolStripMenuItem.Click += new System.EventHandler(this.f1ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(104, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -280,6 +290,7 @@ namespace BlueJay
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(12, 36);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -946,6 +957,7 @@ namespace BlueJay
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.tabPage3.Controls.Add(this.label19);
             this.tabPage3.Controls.Add(this.label17);
             this.tabPage3.Controls.Add(this.label16);
             this.tabPage3.Controls.Add(this.label15);
@@ -967,18 +979,18 @@ namespace BlueJay
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Yellow;
-            this.label17.Location = new System.Drawing.Point(123, 139);
+            this.label17.Location = new System.Drawing.Point(129, 127);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(195, 17);
+            this.label17.Size = new System.Drawing.Size(191, 17);
             this.label17.TabIndex = 32;
-            this.label17.Text = " or roman numerals to integer";
+            this.label17.Text = "or roman numerals to integer";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Yellow;
-            this.label16.Location = new System.Drawing.Point(126, 122);
+            this.label16.Location = new System.Drawing.Point(129, 110);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(372, 17);
             this.label16.TabIndex = 32;
@@ -1310,6 +1322,87 @@ namespace BlueJay
             this.textBox3.TabIndex = 22;
             this.textBox3.TabStop = false;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.tabPage4.Controls.Add(this.txtMassResults);
+            this.tabPage4.Controls.Add(this.cboMassTo);
+            this.tabPage4.Controls.Add(this.cboMassFrom);
+            this.tabPage4.Controls.Add(this.groupBox5);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(621, 280);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Mass";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Yellow;
+            this.label19.Location = new System.Drawing.Point(129, 148);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(177, 16);
+            this.label19.TabIndex = 33;
+            this.label19.Text = "NOTE: This tab is just for fun.";
+            // 
+            // cboMassFrom
+            // 
+            this.cboMassFrom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cboMassFrom.FormattingEnabled = true;
+            this.cboMassFrom.Location = new System.Drawing.Point(141, 36);
+            this.cboMassFrom.Name = "cboMassFrom";
+            this.cboMassFrom.Size = new System.Drawing.Size(377, 21);
+            this.cboMassFrom.TabIndex = 0;
+            // 
+            // txtMassResults
+            // 
+            this.txtMassResults.BackColor = System.Drawing.Color.Gray;
+            this.txtMassResults.Location = new System.Drawing.Point(141, 138);
+            this.txtMassResults.Name = "txtMassResults";
+            this.txtMassResults.Size = new System.Drawing.Size(377, 20);
+            this.txtMassResults.TabIndex = 1;
+            // 
+            // btnMassCalculate
+            // 
+            this.btnMassCalculate.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMassCalculate.Location = new System.Drawing.Point(259, 19);
+            this.btnMassCalculate.Name = "btnMassCalculate";
+            this.btnMassCalculate.Size = new System.Drawing.Size(89, 30);
+            this.btnMassCalculate.TabIndex = 2;
+            this.btnMassCalculate.Text = "Calculate";
+            this.btnMassCalculate.UseVisualStyleBackColor = true;
+            // 
+            // btnMassClear
+            // 
+            this.btnMassClear.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMassClear.Location = new System.Drawing.Point(29, 19);
+            this.btnMassClear.Name = "btnMassClear";
+            this.btnMassClear.Size = new System.Drawing.Size(83, 30);
+            this.btnMassClear.TabIndex = 3;
+            this.btnMassClear.Text = "Clear";
+            this.btnMassClear.UseVisualStyleBackColor = true;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnMassClear);
+            this.groupBox5.Controls.Add(this.btnMassCalculate);
+            this.groupBox5.Location = new System.Drawing.Point(141, 185);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(377, 66);
+            this.groupBox5.TabIndex = 4;
+            this.groupBox5.TabStop = false;
+            // 
+            // cboMassTo
+            // 
+            this.cboMassTo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cboMassTo.FormattingEnabled = true;
+            this.cboMassTo.Location = new System.Drawing.Point(141, 86);
+            this.cboMassTo.Name = "cboMassTo";
+            this.cboMassTo.Size = new System.Drawing.Size(377, 21);
+            this.cboMassTo.TabIndex = 0;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1347,6 +1440,9 @@ namespace BlueJay
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1447,6 +1543,14 @@ namespace BlueJay
         private System.Windows.Forms.Button btnBaseConversionCalculate;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.CheckBox cbxJOIN;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TextBox txtMassResults;
+        private System.Windows.Forms.ComboBox cboMassTo;
+        private System.Windows.Forms.ComboBox cboMassFrom;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button btnMassClear;
+        private System.Windows.Forms.Button btnMassCalculate;
     }
 }
 

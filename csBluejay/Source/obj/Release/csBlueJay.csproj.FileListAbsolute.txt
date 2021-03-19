@@ -63,3 +63,16 @@ C:\Users\simon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\Sou
 C:\Users\simon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\Source\obj\Release\csBlueJay.csproj.CoreCompileInputs.cache
 C:\Users\simon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\Source\obj\Release\BlueJay.exe
 C:\Users\simon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\Source\obj\Release\BlueJay.pdb
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\bin\Release\Program.cs
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\bin\Release\BlueJay.exe.config
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\bin\Release\BlueJay.exe
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\bin\Release\BlueJay.pdb
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\obj\Release\csBlueJay.csprojAssemblyReference.cache
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\obj\Release\BlueJay.AboutBox1.resources
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\obj\Release\BlueJay.CreditsList.resources
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\obj\Release\BlueJay.Main.resources
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\obj\Release\BlueJay.Properties.Resources.resources
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\obj\Release\csBlueJay.csproj.GenerateResource.cache
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\obj\Release\csBlueJay.csproj.CoreCompileInputs.cache
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\obj\Release\BlueJay.exe
+C:\Users\snixon\OneDrive\Development_Projects\Visual_Studio\Windows\csBluejay\BlueJay\csBluejay\Source\obj\Release\BlueJay.pdb
