@@ -1,0 +1,79 @@
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Release\BlueJay.exe
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Release\BlueJay.pdb
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\bin\Release\Program.cs
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\bin\Release\BlueJay.exe
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\bin\Release\BlueJay.pdb
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Release\ResolveAssemblyReference.cache
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Release\BlueJay.AboutBox1.resources
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Release\BlueJay.Main.resources
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Release\BlueJay.Properties.Resources.resources
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Release\CS_BlueJay.csproj.GenerateResource.Cache
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.exe
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.AboutBox1.resources
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.Main.resources
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\CS_BlueJay.csproj.GenerateResource.Cache
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\bin\Debug\Program.cs
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\bin\Debug\BlueJay.exe
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\bin\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.CreditsList.resources
+C:\Users\snixon\Documents\Visual Studio 2005\Projects\BlueJay\Source\obj\Release\BlueJay.CreditsList.resources
+Z:\My Documents\Development Projects\Visual Studio 2005\BlueJay\Source\bin\Release\Program.cs
+Z:\My Documents\Development Projects\Visual Studio 2005\BlueJay\Source\bin\Release\BlueJay.exe
+Z:\My Documents\Development Projects\Visual Studio 2005\BlueJay\Source\bin\Release\BlueJay.pdb
+Z:\My Documents\Development Projects\Visual Studio 2005\BlueJay\Source\obj\Release\ResolveAssemblyReference.cache
+Z:\My Documents\Development Projects\Visual Studio 2005\BlueJay\Source\obj\Release\BlueJay.AboutBox1.resources
+Z:\My Documents\Development Projects\Visual Studio 2005\BlueJay\Source\obj\Release\BlueJay.CreditsList.resources
+Z:\My Documents\Development Projects\Visual Studio 2005\BlueJay\Source\obj\Release\BlueJay.Main.resources
+Z:\My Documents\Development Projects\Visual Studio 2005\BlueJay\Source\obj\Release\BlueJay.Properties.Resources.resources
+Z:\My Documents\Development Projects\Visual Studio 2005\BlueJay\Source\obj\Release\CS_BlueJay.csproj.GenerateResource.Cache
+Z:\My Documents\Development Projects\Visual Studio 2005\BlueJay\Source\obj\Release\BlueJay.exe
+Z:\My Documents\Development Projects\Visual Studio 2005\BlueJay\Source\obj\Release\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio\BlueJay\Source\obj\Debug\BlueJay.exe
+C:\Users\snixon\Documents\Development Projects\Visual Studio\BlueJay\Source\obj\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.exe
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\Projects\BlueJay\Source\bin\Debug\Program.cs
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\Projects\BlueJay\Source\bin\Debug\BlueJay.exe
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\Projects\BlueJay\Source\bin\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.AboutBox1.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.CreditsList.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.Main.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\Projects\BlueJay\Source\obj\Debug\CS_BlueJay.csproj.GenerateResource.Cache
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Debug\BlueJay.exe
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\bin\Debug\Program.cs
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\bin\Debug\BlueJay.exe
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\bin\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Debug\BlueJay.AboutBox1.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Debug\BlueJay.CreditsList.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Debug\BlueJay.Main.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Debug\CS_BlueJay.csproj.GenerateResource.Cache
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Release\BlueJay.exe
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Release\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\bin\Release\Program.cs
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\bin\Release\BlueJay.exe
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\bin\Release\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Release\ResolveAssemblyReference.cache
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Release\BlueJay.AboutBox1.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Release\BlueJay.CreditsList.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Release\BlueJay.Main.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Release\BlueJay.Properties.Resources.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio 2005\Projects\Bluejay\Source\obj\Release\CS_BlueJay.csproj.GenerateResource.Cache
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\BlueJay\Source\obj\Debug\BlueJay.exe
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\BlueJay\Source\obj\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\BlueJay\Source\bin\Debug\Program.cs
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\BlueJay\Source\bin\Debug\BlueJay.exe
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\BlueJay\Source\bin\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\BlueJay\Source\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\BlueJay\Source\obj\Debug\BlueJay.AboutBox1.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\BlueJay\Source\obj\Debug\BlueJay.CreditsList.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\BlueJay\Source\obj\Debug\BlueJay.Main.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\BlueJay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\Visual Studio 2005\BlueJay\Source\obj\Debug\CS_BlueJay.csproj.GenerateResource.Cache

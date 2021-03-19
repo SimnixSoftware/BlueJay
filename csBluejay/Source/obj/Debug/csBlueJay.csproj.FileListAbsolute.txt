@@ -1,0 +1,108 @@
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\Program.cs
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.exe.config
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.exe
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.pdb
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\csBlueJay.csprojResolveAssemblyReference.cache
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.AboutBox1.resources
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.CreditsList.resources
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Main.resources
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\csBlueJay.csproj.GenerateResource.Cache
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.exe
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.exe.config
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.exe
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\Program.cs
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.exe
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.pdb
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.AboutBox1.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.CreditsList.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Main.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\snixon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.exe.config
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.exe
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.pdb
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\Program.cs
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.exe
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.pdb
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\csBlueJay.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.AboutBox1.resources
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.CreditsList.resources
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Main.resources
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\csBlueJay.csproj.GenerateResource.Cache
+C:\Users\Simon\Documents\Test\Source\bin\Debug\Program.cs
+C:\Users\Simon\Documents\Test\Source\bin\Debug\BlueJay.exe.config
+C:\Users\Simon\Documents\Test\Source\bin\Debug\BlueJay.exe
+C:\Users\Simon\Documents\Test\Source\bin\Debug\BlueJay.pdb
+C:\Users\Simon\Documents\Test\Source\obj\Debug\csBlueJay.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Documents\Test\Source\obj\Debug\BlueJay.AboutBox1.resources
+C:\Users\Simon\Documents\Test\Source\obj\Debug\BlueJay.CreditsList.resources
+C:\Users\Simon\Documents\Test\Source\obj\Debug\BlueJay.Main.resources
+C:\Users\Simon\Documents\Test\Source\obj\Debug\BlueJay.Properties.Resources.resources
+C:\Users\Simon\Documents\Test\Source\obj\Debug\csBlueJay.csproj.GenerateResource.Cache
+C:\Users\Simon\Documents\Test\Source\obj\Debug\BlueJay.exe
+C:\Users\Simon\Documents\Test\Source\obj\Debug\BlueJay.pdb
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.exe.config
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.exe
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.pdb
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\bin\Debug\Program.cs
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.exe
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.pdb
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\obj\Debug\csBlueJay.csprojResolveAssemblyReference.cache
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.AboutBox1.resources
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.CreditsList.resources
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Main.resources
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+\\SYS2K\Development\Projects\Visual Studio\csBluejay\Source\obj\Debug\csBlueJay.csproj.GenerateResource.Cache
+Z:\Development Projects\Projects\Visual Studio\csBluejay\Source\bin\Debug\Program.cs
+Z:\Development Projects\Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.exe.config
+Z:\Development Projects\Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.exe
+Z:\Development Projects\Projects\Visual Studio\csBluejay\Source\bin\Debug\BlueJay.pdb
+Z:\Development Projects\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.AboutBox1.resources
+Z:\Development Projects\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.CreditsList.resources
+Z:\Development Projects\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Main.resources
+Z:\Development Projects\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+Z:\Development Projects\Projects\Visual Studio\csBluejay\Source\obj\Debug\csBlueJay.csproj.GenerateResource.Cache
+Z:\Development Projects\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.exe
+Z:\Development Projects\Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.pdb
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\bin\Debug\BlueJay.exe.config
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.exe
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.pdb
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\bin\Debug\Program.cs
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\bin\Debug\BlueJay.exe
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\bin\Debug\BlueJay.pdb
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\csBlueJay.csprojResolveAssemblyReference.cache
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.AboutBox1.resources
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.CreditsList.resources
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.Main.resources
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+Z:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\csBlueJay.csproj.GenerateResource.Cache
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\bin\Debug\BlueJay.exe.config
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.exe
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.pdb
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\bin\Debug\Program.cs
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\bin\Debug\BlueJay.exe
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\bin\Debug\BlueJay.pdb
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\csBlueJay.csprojResolveAssemblyReference.cache
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.AboutBox1.resources
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.CreditsList.resources
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.Main.resources
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+F:\Development Projects\Visual Studio\Windows Desktop\csBluejay\Source\obj\Debug\csBlueJay.csproj.GenerateResource.Cache
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\bin\Debug\Program.cs
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\bin\Debug\BlueJay.exe.config
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\bin\Debug\BlueJay.exe
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\bin\Debug\BlueJay.pdb
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\obj\Debug\BlueJay.AboutBox1.resources
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\obj\Debug\BlueJay.CreditsList.resources
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\obj\Debug\BlueJay.Main.resources
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\obj\Debug\csBlueJay.csproj.GenerateResource.cache
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\obj\Debug\csBlueJay.csproj.CoreCompileInputs.cache
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\obj\Debug\BlueJay.exe
+D:\Development_Projects\Visual_Studio\Windows_Desktop\csBluejay\Source\obj\Debug\BlueJay.pdb

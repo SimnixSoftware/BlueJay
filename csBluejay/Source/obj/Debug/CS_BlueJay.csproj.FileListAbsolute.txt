@@ -1,0 +1,3 @@
+Z:\Documents\Development Projects\Visual Studio\Visual Studio 2010\csBlueJay\Source\bin\Debug\BlueJay.exe.config
+Z:\Documents\Development Projects\Visual Studio\Visual Studio 2010\csBlueJay\Source\obj\Debug\BlueJay.exe
+Z:\Documents\Development Projects\Visual Studio\Visual Studio 2010\csBlueJay\Source\obj\Debug\BlueJay.pdb

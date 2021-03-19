@@ -1,0 +1,6 @@
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\ResolveAssemblyReference.cache
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.AboutBox1.resources
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Main.resources
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.Properties.Resources.resources
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.csproj.GenerateResource.Cache
+Z:\My Documents\Development Projects\Visual Studio\csBluejay\Source\obj\Debug\BlueJay.exe
