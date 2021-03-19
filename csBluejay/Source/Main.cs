@@ -7,7 +7,7 @@
 // Description: Binary, Decimal and Hexidecimal Converter/Calculator. now
 //  has binary arithmetic tab and decimal to roman tabs.
 //
-// IDE: Microsoft Visual Studio 2012 Professional
+// IDE: Microsoft Visual Studio 2019 Community edition
 // Language: C# 7.0
 //
 /////////////////////////////////////////////////////////////////////////////
@@ -39,10 +39,10 @@ namespace BlueJay
         private Int64 i64NegativeBinaryLimit = -256;
         private Int64 i64BinaryLength = 8;
         private bool nonNumberEntered;
-        //private const int BLACK = 0;
+        private const int BLACK = 0;
         private const int ERROR = 1;
-        //private const int WARNING = 2;
-        //private const int MESSAGE = 3;
+        private const int WARNING = 2;
+        private const int MESSAGE = 3;
 
         enum StatusBarTextColour { NORMAL, ERROR, WARNING, MESSAGE};
 
