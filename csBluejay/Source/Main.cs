@@ -1839,14 +1839,48 @@ public Main()
         #region Mass
 
         private void btnMassCalculate_Click(object sender, EventArgs e)
-        {
-            
+        {   
+            int iFrom = cboMassFrom.SelectedIndex;
+            int iTo = cboMassTo.SelectedIndex;
+            int iRound = 8;
+            int iThousand = 1000;
+            int iMillion = 1000000;
+            int iThouMill = 1000000000;
+
+
+            switch (iFrom)
+            {
+                case 0: //from milligrams
+                    switch (iTo)
+                    {
+                        case 0: //to milligrams
+                            txtMassResults.Text = txtMassInput.Text;
+                            break;
+                        case 1: //to grams
+                            txtMassResults.Text = (Math.Round(float.Parse(txtMassInput.Text) / iThousand, iRound)).ToString();
+                            break;
+                        case 2: //to kilograms
+                            txtMassResults.Text = (Math.Round(float.Parse(txtMassInput.Text) / iMillion, iRound)).ToString();
+                            break;
+                        case 3: //to metric ton (tonne)
+                            txtMassResults.Text = (Math.Round(float.Parse(txtMassInput.Text) / iThouMill, iRound)).ToString();
+                            break;
+                        case 4: //to ounce
+                            txtMassResults.Text = (Math.Round(double.Parse(txtMassInput.Text) * 0.00003527, iRound)).ToString();
+                            break;
+                    }
+                        break;
+                case 1: //from grams
+
+                    break;
+            }
             
         }
 
         private void btnMassClear_Click(object sender, EventArgs e)
         {
             cboMassFrom.Text = "Select from";
+            txtMassInput.Text = "";
             cboMassTo.Text = "Select To";
             txtMassResults.Text = "";
         }

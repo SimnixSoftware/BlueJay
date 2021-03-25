@@ -103,7 +103,7 @@ namespace BlueJay
             this.btnRoman_Calculate = new System.Windows.Forms.Button();
             this.txtRoman_Result = new System.Windows.Forms.TextBox();
             this.txtRoman_Input = new System.Windows.Forms.TextBox();
-            this.tabWeight = new System.Windows.Forms.TabPage();
+            this.tabMass = new System.Windows.Forms.TabPage();
             this.lblMassResult = new System.Windows.Forms.Label();
             this.lblMassTo = new System.Windows.Forms.Label();
             this.lblMassFrom = new System.Windows.Forms.Label();
@@ -115,6 +115,7 @@ namespace BlueJay
             this.btnMassCalculate = new System.Windows.Forms.Button();
             this.tabPressure = new System.Windows.Forms.TabPage();
             this.tabArea = new System.Windows.Forms.TabPage();
+            this.tabTemperature = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -135,7 +136,7 @@ namespace BlueJay
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.tabTemperature = new System.Windows.Forms.TabPage();
+            this.txtMassInput = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -145,7 +146,7 @@ namespace BlueJay
             this.groupBox1.SuspendLayout();
             this.tabRoman.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.tabWeight.SuspendLayout();
+            this.tabMass.SuspendLayout();
             this.gpbMassControls.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -153,6 +154,7 @@ namespace BlueJay
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.toolStripMenuItem1,
@@ -161,7 +163,7 @@ namespace BlueJay
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip1.Size = new System.Drawing.Size(653, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(871, 30);
             this.menuStrip1.TabIndex = 32;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -172,13 +174,13 @@ namespace BlueJay
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -190,20 +192,20 @@ namespace BlueJay
             this.BinaryLimit_32bit_ToolStripMenuItem});
             this.toolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(61, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(76, 26);
             this.toolStripMenuItem1.Text = "Settings";
             // 
             // BinaryLimit_8bit_ToolStripMenuItem
             // 
             this.BinaryLimit_8bit_ToolStripMenuItem.Name = "BinaryLimit_8bit_ToolStripMenuItem";
-            this.BinaryLimit_8bit_ToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.BinaryLimit_8bit_ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.BinaryLimit_8bit_ToolStripMenuItem.Text = "Binary Limit 8 bit";
             this.BinaryLimit_8bit_ToolStripMenuItem.Click += new System.EventHandler(this.BinaryLimit_8bit_ToolStripMenuItem_Click);
             // 
             // BinaryLimit_16bit_ToolStripMenuItem
             // 
             this.BinaryLimit_16bit_ToolStripMenuItem.Name = "BinaryLimit_16bit_ToolStripMenuItem";
-            this.BinaryLimit_16bit_ToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.BinaryLimit_16bit_ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.BinaryLimit_16bit_ToolStripMenuItem.Text = "Binary Limit 16 bit";
             this.BinaryLimit_16bit_ToolStripMenuItem.Click += new System.EventHandler(this.BinaryLimit_16bit_ToolStripMenuItem_Click);
             // 
@@ -211,7 +213,7 @@ namespace BlueJay
             // 
             this.BinaryLimit_32bit_ToolStripMenuItem.Name = "BinaryLimit_32bit_ToolStripMenuItem";
             this.BinaryLimit_32bit_ToolStripMenuItem.ShowShortcutKeys = false;
-            this.BinaryLimit_32bit_ToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.BinaryLimit_32bit_ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.BinaryLimit_32bit_ToolStripMenuItem.Text = "Binary Limit 32 bit";
             this.BinaryLimit_32bit_ToolStripMenuItem.Click += new System.EventHandler(this.BinaryLimit_32bit_ToolStripMenuItem_Click);
             // 
@@ -224,25 +226,25 @@ namespace BlueJay
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // f1ToolStripMenuItem
             // 
             this.f1ToolStripMenuItem.Name = "f1ToolStripMenuItem";
-            this.f1ToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.f1ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.f1ToolStripMenuItem.Text = "&F1";
             this.f1ToolStripMenuItem.Click += new System.EventHandler(this.f1ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(104, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -251,13 +253,15 @@ namespace BlueJay
             this.statusStrip1.AutoSize = false;
             this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.statusStrip1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblBinaryLimit,
             this.lblErrorStatus});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 353);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 434);
             this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.statusStrip1.Size = new System.Drawing.Size(653, 25);
+            this.statusStrip1.Size = new System.Drawing.Size(871, 31);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 33;
             this.statusStrip1.Text = "statusStrip1";
@@ -272,7 +276,7 @@ namespace BlueJay
             this.lblBinaryLimit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBinaryLimit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.lblBinaryLimit.Name = "lblBinaryLimit";
-            this.lblBinaryLimit.Size = new System.Drawing.Size(120, 20);
+            this.lblBinaryLimit.Size = new System.Drawing.Size(120, 25);
             this.lblBinaryLimit.Text = "Binary Limit: 8 bit";
             // 
             // lblErrorStatus
@@ -285,8 +289,7 @@ namespace BlueJay
             this.lblErrorStatus.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblErrorStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.lblErrorStatus.Name = "lblErrorStatus";
-            this.lblErrorStatus.Size = new System.Drawing.Size(530, 20);
-            this.lblErrorStatus.Text = "toolStripStatusLabel5";
+            this.lblErrorStatus.Size = new System.Drawing.Size(530, 25);
             // 
             // tabControl1
             // 
@@ -296,14 +299,15 @@ namespace BlueJay
             this.tabControl1.Controls.Add(this.tabBaseConversion);
             this.tabControl1.Controls.Add(this.tabBinaryArithmetic);
             this.tabControl1.Controls.Add(this.tabRoman);
-            this.tabControl1.Controls.Add(this.tabWeight);
+            this.tabControl1.Controls.Add(this.tabMass);
             this.tabControl1.Controls.Add(this.tabPressure);
             this.tabControl1.Controls.Add(this.tabArea);
             this.tabControl1.Controls.Add(this.tabTemperature);
-            this.tabControl1.Location = new System.Drawing.Point(12, 36);
+            this.tabControl1.Location = new System.Drawing.Point(16, 44);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(629, 306);
+            this.tabControl1.Size = new System.Drawing.Size(839, 377);
             this.tabControl1.TabIndex = 34;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -328,19 +332,21 @@ namespace BlueJay
             this.tabBaseConversion.Controls.Add(this.label1);
             this.tabBaseConversion.Controls.Add(this.lblBin2);
             this.tabBaseConversion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.tabBaseConversion.Location = new System.Drawing.Point(4, 22);
+            this.tabBaseConversion.Location = new System.Drawing.Point(4, 25);
+            this.tabBaseConversion.Margin = new System.Windows.Forms.Padding(4);
             this.tabBaseConversion.Name = "tabBaseConversion";
-            this.tabBaseConversion.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBaseConversion.Size = new System.Drawing.Size(621, 280);
+            this.tabBaseConversion.Padding = new System.Windows.Forms.Padding(4);
+            this.tabBaseConversion.Size = new System.Drawing.Size(831, 348);
             this.tabBaseConversion.TabIndex = 0;
             this.tabBaseConversion.Text = "Base # Conversion";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(447, 19);
+            this.label18.Location = new System.Drawing.Point(596, 23);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(51, 13);
+            this.label18.Size = new System.Drawing.Size(68, 17);
             this.label18.TabIndex = 45;
             this.label18.Text = "Clipboard";
             // 
@@ -350,9 +356,11 @@ namespace BlueJay
             this.groupBox4.Controls.Add(this.btnBaseConversionClear);
             this.groupBox4.Controls.Add(this.btnBaseConversionCalculate);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox4.Location = new System.Drawing.Point(33, 214);
+            this.groupBox4.Location = new System.Drawing.Point(136, 263);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(549, 57);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(561, 70);
             this.groupBox4.TabIndex = 44;
             this.groupBox4.TabStop = false;
             // 
@@ -362,9 +370,10 @@ namespace BlueJay
             this.btnBaseConversionClear.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnBaseConversionClear.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBaseConversionClear.ForeColor = System.Drawing.Color.Black;
-            this.btnBaseConversionClear.Location = new System.Drawing.Point(208, 19);
+            this.btnBaseConversionClear.Location = new System.Drawing.Point(32, 23);
+            this.btnBaseConversionClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnBaseConversionClear.Name = "btnBaseConversionClear";
-            this.btnBaseConversionClear.Size = new System.Drawing.Size(132, 25);
+            this.btnBaseConversionClear.Size = new System.Drawing.Size(176, 31);
             this.btnBaseConversionClear.TabIndex = 3;
             this.btnBaseConversionClear.Text = "Clear";
             this.btnBaseConversionClear.UseVisualStyleBackColor = true;
@@ -376,9 +385,10 @@ namespace BlueJay
             this.btnBaseConversionCalculate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnBaseConversionCalculate.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBaseConversionCalculate.ForeColor = System.Drawing.Color.Black;
-            this.btnBaseConversionCalculate.Location = new System.Drawing.Point(390, 20);
+            this.btnBaseConversionCalculate.Location = new System.Drawing.Point(352, 23);
+            this.btnBaseConversionCalculate.Margin = new System.Windows.Forms.Padding(4);
             this.btnBaseConversionCalculate.Name = "btnBaseConversionCalculate";
-            this.btnBaseConversionCalculate.Size = new System.Drawing.Size(89, 23);
+            this.btnBaseConversionCalculate.Size = new System.Drawing.Size(176, 31);
             this.btnBaseConversionCalculate.TabIndex = 2;
             this.btnBaseConversionCalculate.Text = "Calculate";
             this.btnBaseConversionCalculate.UseVisualStyleBackColor = true;
@@ -387,9 +397,10 @@ namespace BlueJay
             // btnCopyToClipboard_2sCompliment
             // 
             this.btnCopyToClipboard_2sCompliment.ForeColor = System.Drawing.Color.Black;
-            this.btnCopyToClipboard_2sCompliment.Location = new System.Drawing.Point(446, 166);
+            this.btnCopyToClipboard_2sCompliment.Location = new System.Drawing.Point(595, 204);
+            this.btnCopyToClipboard_2sCompliment.Margin = new System.Windows.Forms.Padding(4);
             this.btnCopyToClipboard_2sCompliment.Name = "btnCopyToClipboard_2sCompliment";
-            this.btnCopyToClipboard_2sCompliment.Size = new System.Drawing.Size(52, 23);
+            this.btnCopyToClipboard_2sCompliment.Size = new System.Drawing.Size(69, 28);
             this.btnCopyToClipboard_2sCompliment.TabIndex = 35;
             this.btnCopyToClipboard_2sCompliment.Text = "Copy";
             this.btnCopyToClipboard_2sCompliment.UseVisualStyleBackColor = true;
@@ -398,9 +409,10 @@ namespace BlueJay
             // btnCopyToClipboard_Hex
             // 
             this.btnCopyToClipboard_Hex.ForeColor = System.Drawing.Color.Black;
-            this.btnCopyToClipboard_Hex.Location = new System.Drawing.Point(446, 118);
+            this.btnCopyToClipboard_Hex.Location = new System.Drawing.Point(595, 145);
+            this.btnCopyToClipboard_Hex.Margin = new System.Windows.Forms.Padding(4);
             this.btnCopyToClipboard_Hex.Name = "btnCopyToClipboard_Hex";
-            this.btnCopyToClipboard_Hex.Size = new System.Drawing.Size(52, 23);
+            this.btnCopyToClipboard_Hex.Size = new System.Drawing.Size(69, 28);
             this.btnCopyToClipboard_Hex.TabIndex = 35;
             this.btnCopyToClipboard_Hex.Text = "Copy";
             this.btnCopyToClipboard_Hex.UseVisualStyleBackColor = true;
@@ -409,9 +421,10 @@ namespace BlueJay
             // btnCopyToClipboard_Binary
             // 
             this.btnCopyToClipboard_Binary.ForeColor = System.Drawing.Color.Black;
-            this.btnCopyToClipboard_Binary.Location = new System.Drawing.Point(446, 87);
+            this.btnCopyToClipboard_Binary.Location = new System.Drawing.Point(595, 107);
+            this.btnCopyToClipboard_Binary.Margin = new System.Windows.Forms.Padding(4);
             this.btnCopyToClipboard_Binary.Name = "btnCopyToClipboard_Binary";
-            this.btnCopyToClipboard_Binary.Size = new System.Drawing.Size(52, 23);
+            this.btnCopyToClipboard_Binary.Size = new System.Drawing.Size(69, 28);
             this.btnCopyToClipboard_Binary.TabIndex = 35;
             this.btnCopyToClipboard_Binary.Text = "Copy";
             this.btnCopyToClipboard_Binary.UseVisualStyleBackColor = true;
@@ -420,9 +433,10 @@ namespace BlueJay
             // btnCopyToClipboard_Decimal
             // 
             this.btnCopyToClipboard_Decimal.ForeColor = System.Drawing.Color.Black;
-            this.btnCopyToClipboard_Decimal.Location = new System.Drawing.Point(446, 35);
+            this.btnCopyToClipboard_Decimal.Location = new System.Drawing.Point(595, 43);
+            this.btnCopyToClipboard_Decimal.Margin = new System.Windows.Forms.Padding(4);
             this.btnCopyToClipboard_Decimal.Name = "btnCopyToClipboard_Decimal";
-            this.btnCopyToClipboard_Decimal.Size = new System.Drawing.Size(52, 23);
+            this.btnCopyToClipboard_Decimal.Size = new System.Drawing.Size(69, 28);
             this.btnCopyToClipboard_Decimal.TabIndex = 35;
             this.btnCopyToClipboard_Decimal.Text = "Copy";
             this.btnCopyToClipboard_Decimal.UseVisualStyleBackColor = true;
@@ -435,9 +449,10 @@ namespace BlueJay
             this.txtHex.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtHex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHex.ForeColor = System.Drawing.Color.Navy;
-            this.txtHex.Location = new System.Drawing.Point(171, 119);
+            this.txtHex.Location = new System.Drawing.Point(228, 146);
+            this.txtHex.Margin = new System.Windows.Forms.Padding(4);
             this.txtHex.Name = "txtHex";
-            this.txtHex.Size = new System.Drawing.Size(269, 20);
+            this.txtHex.Size = new System.Drawing.Size(358, 23);
             this.txtHex.TabIndex = 34;
             this.txtHex.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtHex.Enter += new System.EventHandler(this.txtHex_Enter);
@@ -450,9 +465,10 @@ namespace BlueJay
             this.txtBin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBin.ForeColor = System.Drawing.Color.Navy;
-            this.txtBin.Location = new System.Drawing.Point(171, 89);
+            this.txtBin.Location = new System.Drawing.Point(228, 110);
+            this.txtBin.Margin = new System.Windows.Forms.Padding(4);
             this.txtBin.Name = "txtBin";
-            this.txtBin.Size = new System.Drawing.Size(269, 20);
+            this.txtBin.Size = new System.Drawing.Size(358, 23);
             this.txtBin.TabIndex = 33;
             this.txtBin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtBin.Enter += new System.EventHandler(this.txtBin_Enter);
@@ -465,9 +481,10 @@ namespace BlueJay
             this.txtDec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDec.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDec.ForeColor = System.Drawing.Color.Navy;
-            this.txtDec.Location = new System.Drawing.Point(171, 37);
+            this.txtDec.Location = new System.Drawing.Point(228, 46);
+            this.txtDec.Margin = new System.Windows.Forms.Padding(4);
             this.txtDec.Name = "txtDec";
-            this.txtDec.Size = new System.Drawing.Size(269, 20);
+            this.txtDec.Size = new System.Drawing.Size(358, 23);
             this.txtDec.TabIndex = 32;
             this.txtDec.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtDec.TextChanged += new System.EventHandler(this.txtDec_TextChanged);
@@ -481,9 +498,10 @@ namespace BlueJay
             this.lblDec1.BackColor = System.Drawing.Color.Transparent;
             this.lblDec1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDec1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblDec1.Location = new System.Drawing.Point(112, 39);
+            this.lblDec1.Location = new System.Drawing.Point(149, 48);
+            this.lblDec1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDec1.Name = "lblDec1";
-            this.lblDec1.Size = new System.Drawing.Size(56, 15);
+            this.lblDec1.Size = new System.Drawing.Size(66, 18);
             this.lblDec1.TabIndex = 18;
             this.lblDec1.Text = "Decimal:";
             // 
@@ -494,10 +512,11 @@ namespace BlueJay
             this.txt2sCompliment.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt2sCompliment.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt2sCompliment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txt2sCompliment.Location = new System.Drawing.Point(171, 168);
+            this.txt2sCompliment.Location = new System.Drawing.Point(228, 207);
+            this.txt2sCompliment.Margin = new System.Windows.Forms.Padding(4);
             this.txt2sCompliment.Name = "txt2sCompliment";
             this.txt2sCompliment.ReadOnly = true;
-            this.txt2sCompliment.Size = new System.Drawing.Size(269, 20);
+            this.txt2sCompliment.Size = new System.Drawing.Size(358, 23);
             this.txt2sCompliment.TabIndex = 1;
             this.txt2sCompliment.TabStop = false;
             this.txt2sCompliment.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -508,9 +527,10 @@ namespace BlueJay
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(136, 121);
+            this.label4.Location = new System.Drawing.Point(181, 149);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 15);
+            this.label4.Size = new System.Drawing.Size(38, 18);
             this.label4.TabIndex = 28;
             this.label4.Text = "Hex:";
             // 
@@ -519,9 +539,10 @@ namespace BlueJay
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(414, 71);
+            this.label2.Location = new System.Drawing.Point(552, 87);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 13);
+            this.label2.Size = new System.Drawing.Size(34, 17);
             this.label2.TabIndex = 25;
             this.label2.Text = "LSB";
             // 
@@ -531,9 +552,10 @@ namespace BlueJay
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(72, 170);
+            this.label3.Location = new System.Drawing.Point(96, 209);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 15);
+            this.label3.Size = new System.Drawing.Size(115, 18);
             this.label3.TabIndex = 31;
             this.label3.Text = "2\'s Compliment:";
             // 
@@ -542,9 +564,10 @@ namespace BlueJay
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(172, 71);
+            this.label1.Location = new System.Drawing.Point(229, 87);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 13);
+            this.label1.Size = new System.Drawing.Size(37, 17);
             this.label1.TabIndex = 24;
             this.label1.Text = "MSB";
             // 
@@ -554,9 +577,10 @@ namespace BlueJay
             this.lblBin2.BackColor = System.Drawing.Color.Transparent;
             this.lblBin2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBin2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblBin2.Location = new System.Drawing.Point(124, 91);
+            this.lblBin2.Location = new System.Drawing.Point(165, 112);
+            this.lblBin2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBin2.Name = "lblBin2";
-            this.lblBin2.Size = new System.Drawing.Size(44, 15);
+            this.lblBin2.Size = new System.Drawing.Size(53, 18);
             this.lblBin2.TabIndex = 20;
             this.lblBin2.Text = "Binary:";
             // 
@@ -578,10 +602,11 @@ namespace BlueJay
             this.tabBinaryArithmetic.Controls.Add(this.label5);
             this.tabBinaryArithmetic.Controls.Add(this.txtBinaryAnswer);
             this.tabBinaryArithmetic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.tabBinaryArithmetic.Location = new System.Drawing.Point(4, 22);
+            this.tabBinaryArithmetic.Location = new System.Drawing.Point(4, 25);
+            this.tabBinaryArithmetic.Margin = new System.Windows.Forms.Padding(4);
             this.tabBinaryArithmetic.Name = "tabBinaryArithmetic";
-            this.tabBinaryArithmetic.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBinaryArithmetic.Size = new System.Drawing.Size(621, 280);
+            this.tabBinaryArithmetic.Padding = new System.Windows.Forms.Padding(4);
+            this.tabBinaryArithmetic.Size = new System.Drawing.Size(831, 348);
             this.tabBinaryArithmetic.TabIndex = 1;
             this.tabBinaryArithmetic.Text = "Binary Arithmetic";
             // 
@@ -590,9 +615,10 @@ namespace BlueJay
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(534, 99);
+            this.label13.Location = new System.Drawing.Point(712, 122);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(47, 15);
+            this.label13.Size = new System.Drawing.Size(57, 18);
             this.label13.TabIndex = 38;
             this.label13.Text = "Answer";
             // 
@@ -601,9 +627,10 @@ namespace BlueJay
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(534, 22);
+            this.label12.Location = new System.Drawing.Point(712, 27);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 15);
+            this.label12.Size = new System.Drawing.Size(74, 18);
             this.label12.TabIndex = 37;
             this.label12.Text = "Decimal 1";
             // 
@@ -612,9 +639,10 @@ namespace BlueJay
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(534, 49);
+            this.label11.Location = new System.Drawing.Point(712, 60);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(63, 15);
+            this.label11.Size = new System.Drawing.Size(74, 18);
             this.label11.TabIndex = 36;
             this.label11.Text = "Decimal 2";
             // 
@@ -624,9 +652,10 @@ namespace BlueJay
             this.txtdec2bin2_tab2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtdec2bin2_tab2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdec2bin2_tab2.ForeColor = System.Drawing.Color.Navy;
-            this.txtdec2bin2_tab2.Location = new System.Drawing.Point(416, 47);
+            this.txtdec2bin2_tab2.Location = new System.Drawing.Point(555, 58);
+            this.txtdec2bin2_tab2.Margin = new System.Windows.Forms.Padding(4);
             this.txtdec2bin2_tab2.Name = "txtdec2bin2_tab2";
-            this.txtdec2bin2_tab2.Size = new System.Drawing.Size(114, 20);
+            this.txtdec2bin2_tab2.Size = new System.Drawing.Size(151, 23);
             this.txtdec2bin2_tab2.TabIndex = 35;
             this.txtdec2bin2_tab2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtdec2bin2_tab2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdec2bin2_tab2_KeyPress);
@@ -640,10 +669,11 @@ namespace BlueJay
             this.txtAnswerBinary2Decimal.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtAnswerBinary2Decimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAnswerBinary2Decimal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtAnswerBinary2Decimal.Location = new System.Drawing.Point(416, 97);
+            this.txtAnswerBinary2Decimal.Location = new System.Drawing.Point(555, 119);
+            this.txtAnswerBinary2Decimal.Margin = new System.Windows.Forms.Padding(4);
             this.txtAnswerBinary2Decimal.Name = "txtAnswerBinary2Decimal";
             this.txtAnswerBinary2Decimal.ReadOnly = true;
-            this.txtAnswerBinary2Decimal.Size = new System.Drawing.Size(114, 20);
+            this.txtAnswerBinary2Decimal.Size = new System.Drawing.Size(151, 23);
             this.txtAnswerBinary2Decimal.TabIndex = 34;
             this.txtAnswerBinary2Decimal.TabStop = false;
             this.txtAnswerBinary2Decimal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -656,9 +686,10 @@ namespace BlueJay
             this.txtdec2bin1_tab2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtdec2bin1_tab2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdec2bin1_tab2.ForeColor = System.Drawing.Color.Navy;
-            this.txtdec2bin1_tab2.Location = new System.Drawing.Point(416, 21);
+            this.txtdec2bin1_tab2.Location = new System.Drawing.Point(555, 26);
+            this.txtdec2bin1_tab2.Margin = new System.Windows.Forms.Padding(4);
             this.txtdec2bin1_tab2.Name = "txtdec2bin1_tab2";
-            this.txtdec2bin1_tab2.Size = new System.Drawing.Size(114, 20);
+            this.txtdec2bin1_tab2.Size = new System.Drawing.Size(151, 23);
             this.txtdec2bin1_tab2.TabIndex = 33;
             this.txtdec2bin1_tab2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtdec2bin1_tab2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdec2bin1_tab2_KeyPress);
@@ -683,18 +714,21 @@ namespace BlueJay
             this.groupBox1.Controls.Add(this.cbxSubtract);
             this.groupBox1.Controls.Add(this.cbxAdd);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.Location = new System.Drawing.Point(28, 133);
+            this.groupBox1.Location = new System.Drawing.Point(37, 164);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(564, 129);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(752, 159);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             // 
             // cbxJOIN
             // 
             this.cbxJOIN.AutoSize = true;
-            this.cbxJOIN.Location = new System.Drawing.Point(108, 96);
+            this.cbxJOIN.Location = new System.Drawing.Point(144, 118);
+            this.cbxJOIN.Margin = new System.Windows.Forms.Padding(4);
             this.cbxJOIN.Name = "cbxJOIN";
-            this.cbxJOIN.Size = new System.Drawing.Size(50, 17);
+            this.cbxJOIN.Size = new System.Drawing.Size(61, 21);
             this.cbxJOIN.TabIndex = 15;
             this.cbxJOIN.Text = "JOIN";
             this.cbxJOIN.UseVisualStyleBackColor = true;
@@ -705,9 +739,10 @@ namespace BlueJay
             this.btnResetValues.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnResetValues.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetValues.ForeColor = System.Drawing.Color.Black;
-            this.btnResetValues.Location = new System.Drawing.Point(455, 61);
+            this.btnResetValues.Location = new System.Drawing.Point(607, 75);
+            this.btnResetValues.Margin = new System.Windows.Forms.Padding(4);
             this.btnResetValues.Name = "btnResetValues";
-            this.btnResetValues.Size = new System.Drawing.Size(89, 23);
+            this.btnResetValues.Size = new System.Drawing.Size(119, 28);
             this.btnResetValues.TabIndex = 14;
             this.btnResetValues.Text = "Clear";
             this.btnResetValues.UseVisualStyleBackColor = true;
@@ -723,9 +758,10 @@ namespace BlueJay
             this.btnBinary_Calculate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnBinary_Calculate.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBinary_Calculate.ForeColor = System.Drawing.Color.Black;
-            this.btnBinary_Calculate.Location = new System.Drawing.Point(455, 19);
+            this.btnBinary_Calculate.Location = new System.Drawing.Point(607, 23);
+            this.btnBinary_Calculate.Margin = new System.Windows.Forms.Padding(4);
             this.btnBinary_Calculate.Name = "btnBinary_Calculate";
-            this.btnBinary_Calculate.Size = new System.Drawing.Size(89, 36);
+            this.btnBinary_Calculate.Size = new System.Drawing.Size(119, 44);
             this.btnBinary_Calculate.TabIndex = 13;
             this.btnBinary_Calculate.Text = "Calculate";
             this.btnBinary_Calculate.UseVisualStyleBackColor = false;
@@ -736,9 +772,10 @@ namespace BlueJay
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnReset.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.Black;
-            this.btnReset.Location = new System.Drawing.Point(455, 90);
+            this.btnReset.Location = new System.Drawing.Point(607, 111);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(89, 23);
+            this.btnReset.Size = new System.Drawing.Size(119, 28);
             this.btnReset.TabIndex = 12;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -749,9 +786,10 @@ namespace BlueJay
             this.cbxOR.AutoSize = true;
             this.cbxOR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxOR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbxOR.Location = new System.Drawing.Point(108, 48);
+            this.cbxOR.Location = new System.Drawing.Point(144, 59);
+            this.cbxOR.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOR.Name = "cbxOR";
-            this.cbxOR.Size = new System.Drawing.Size(44, 19);
+            this.cbxOR.Size = new System.Drawing.Size(53, 22);
             this.cbxOR.TabIndex = 11;
             this.cbxOR.Text = "OR";
             this.cbxOR.UseVisualStyleBackColor = true;
@@ -766,9 +804,10 @@ namespace BlueJay
             this.cboBitShift_LR.Items.AddRange(new object[] {
             ">> Right",
             "<< Left"});
-            this.cboBitShift_LR.Location = new System.Drawing.Point(202, 92);
+            this.cboBitShift_LR.Location = new System.Drawing.Point(269, 113);
+            this.cboBitShift_LR.Margin = new System.Windows.Forms.Padding(4);
             this.cboBitShift_LR.Name = "cboBitShift_LR";
-            this.cboBitShift_LR.Size = new System.Drawing.Size(98, 21);
+            this.cboBitShift_LR.Size = new System.Drawing.Size(129, 25);
             this.cboBitShift_LR.TabIndex = 8;
             this.cboBitShift_LR.Text = ">> Right";
             // 
@@ -777,9 +816,10 @@ namespace BlueJay
             this.cbxAND.AutoSize = true;
             this.cbxAND.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAND.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbxAND.Location = new System.Drawing.Point(108, 71);
+            this.cbxAND.Location = new System.Drawing.Point(144, 87);
+            this.cbxAND.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAND.Name = "cbxAND";
-            this.cbxAND.Size = new System.Drawing.Size(51, 19);
+            this.cbxAND.Size = new System.Drawing.Size(61, 22);
             this.cbxAND.TabIndex = 5;
             this.cbxAND.Text = "AND";
             this.cbxAND.UseVisualStyleBackColor = true;
@@ -790,9 +830,10 @@ namespace BlueJay
             this.cbxXOR.AutoSize = true;
             this.cbxXOR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxXOR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbxXOR.Location = new System.Drawing.Point(108, 23);
+            this.cbxXOR.Location = new System.Drawing.Point(144, 28);
+            this.cbxXOR.Margin = new System.Windows.Forms.Padding(4);
             this.cbxXOR.Name = "cbxXOR";
-            this.cbxXOR.Size = new System.Drawing.Size(52, 19);
+            this.cbxXOR.Size = new System.Drawing.Size(63, 22);
             this.cbxXOR.TabIndex = 4;
             this.cbxXOR.Text = "XOR";
             this.cbxXOR.UseVisualStyleBackColor = true;
@@ -802,9 +843,10 @@ namespace BlueJay
             // 
             this.lblBitShift.AutoSize = true;
             this.lblBitShift.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBitShift.Location = new System.Drawing.Point(199, 45);
+            this.lblBitShift.Location = new System.Drawing.Point(265, 55);
+            this.lblBitShift.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBitShift.Name = "lblBitShift";
-            this.lblBitShift.Size = new System.Drawing.Size(48, 15);
+            this.lblBitShift.Size = new System.Drawing.Size(58, 18);
             this.lblBitShift.TabIndex = 6;
             this.lblBitShift.Text = "Bit Shift";
             // 
@@ -820,10 +862,11 @@ namespace BlueJay
             "3",
             "4",
             "5"});
-            this.cboBitShiftNumber.Location = new System.Drawing.Point(202, 61);
+            this.cboBitShiftNumber.Location = new System.Drawing.Point(269, 75);
+            this.cboBitShiftNumber.Margin = new System.Windows.Forms.Padding(4);
             this.cboBitShiftNumber.MaxDropDownItems = 5;
             this.cboBitShiftNumber.Name = "cboBitShiftNumber";
-            this.cboBitShiftNumber.Size = new System.Drawing.Size(98, 21);
+            this.cboBitShiftNumber.Size = new System.Drawing.Size(129, 25);
             this.cboBitShiftNumber.TabIndex = 7;
             this.cboBitShiftNumber.Text = "1";
             // 
@@ -831,9 +874,10 @@ namespace BlueJay
             // 
             this.cbxBitShiftEnabled.AutoSize = true;
             this.cbxBitShiftEnabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxBitShiftEnabled.Location = new System.Drawing.Point(202, 23);
+            this.cbxBitShiftEnabled.Location = new System.Drawing.Point(269, 28);
+            this.cbxBitShiftEnabled.Margin = new System.Windows.Forms.Padding(4);
             this.cbxBitShiftEnabled.Name = "cbxBitShiftEnabled";
-            this.cbxBitShiftEnabled.Size = new System.Drawing.Size(109, 19);
+            this.cbxBitShiftEnabled.Size = new System.Drawing.Size(129, 22);
             this.cbxBitShiftEnabled.TabIndex = 6;
             this.cbxBitShiftEnabled.Text = "Enable Bit Shift";
             this.cbxBitShiftEnabled.UseVisualStyleBackColor = true;
@@ -844,9 +888,10 @@ namespace BlueJay
             this.cbxMultiply.AutoSize = true;
             this.cbxMultiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxMultiply.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbxMultiply.Location = new System.Drawing.Point(18, 94);
+            this.cbxMultiply.Location = new System.Drawing.Point(24, 116);
+            this.cbxMultiply.Margin = new System.Windows.Forms.Padding(4);
             this.cbxMultiply.Name = "cbxMultiply";
-            this.cbxMultiply.Size = new System.Drawing.Size(68, 19);
+            this.cbxMultiply.Size = new System.Drawing.Size(79, 22);
             this.cbxMultiply.TabIndex = 3;
             this.cbxMultiply.Text = "Multiply";
             this.cbxMultiply.UseVisualStyleBackColor = true;
@@ -857,9 +902,10 @@ namespace BlueJay
             this.cbxDivide.AutoSize = true;
             this.cbxDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxDivide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbxDivide.Location = new System.Drawing.Point(18, 71);
+            this.cbxDivide.Location = new System.Drawing.Point(24, 87);
+            this.cbxDivide.Margin = new System.Windows.Forms.Padding(4);
             this.cbxDivide.Name = "cbxDivide";
-            this.cbxDivide.Size = new System.Drawing.Size(60, 19);
+            this.cbxDivide.Size = new System.Drawing.Size(70, 22);
             this.cbxDivide.TabIndex = 2;
             this.cbxDivide.Text = "Divide";
             this.cbxDivide.UseVisualStyleBackColor = true;
@@ -870,9 +916,10 @@ namespace BlueJay
             this.cbxSubtract.AutoSize = true;
             this.cbxSubtract.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSubtract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbxSubtract.Location = new System.Drawing.Point(18, 48);
+            this.cbxSubtract.Location = new System.Drawing.Point(24, 59);
+            this.cbxSubtract.Margin = new System.Windows.Forms.Padding(4);
             this.cbxSubtract.Name = "cbxSubtract";
-            this.cbxSubtract.Size = new System.Drawing.Size(71, 19);
+            this.cbxSubtract.Size = new System.Drawing.Size(85, 22);
             this.cbxSubtract.TabIndex = 1;
             this.cbxSubtract.Text = "Subtract";
             this.cbxSubtract.UseVisualStyleBackColor = true;
@@ -883,9 +930,10 @@ namespace BlueJay
             this.cbxAdd.AutoSize = true;
             this.cbxAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbxAdd.Location = new System.Drawing.Point(18, 23);
+            this.cbxAdd.Location = new System.Drawing.Point(24, 28);
+            this.cbxAdd.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAdd.Name = "cbxAdd";
-            this.cbxAdd.Size = new System.Drawing.Size(47, 19);
+            this.cbxAdd.Size = new System.Drawing.Size(55, 22);
             this.cbxAdd.TabIndex = 0;
             this.cbxAdd.Text = "Add";
             this.cbxAdd.UseVisualStyleBackColor = true;
@@ -896,9 +944,10 @@ namespace BlueJay
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(31, 23);
+            this.label7.Location = new System.Drawing.Point(41, 28);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 15);
+            this.label7.Size = new System.Drawing.Size(61, 18);
             this.label7.TabIndex = 27;
             this.label7.Text = "Binary 1";
             // 
@@ -907,9 +956,10 @@ namespace BlueJay
             this.txtBinSource1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtBinSource1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBinSource1.ForeColor = System.Drawing.Color.Navy;
-            this.txtBinSource1.Location = new System.Drawing.Point(85, 21);
+            this.txtBinSource1.Location = new System.Drawing.Point(113, 26);
+            this.txtBinSource1.Margin = new System.Windows.Forms.Padding(4);
             this.txtBinSource1.Name = "txtBinSource1";
-            this.txtBinSource1.Size = new System.Drawing.Size(241, 20);
+            this.txtBinSource1.Size = new System.Drawing.Size(320, 23);
             this.txtBinSource1.TabIndex = 0;
             this.txtBinSource1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtBinSource1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBinSource1_KeyPress);
@@ -919,9 +969,10 @@ namespace BlueJay
             this.lblBinSource2.AutoSize = true;
             this.lblBinSource2.BackColor = System.Drawing.Color.Transparent;
             this.lblBinSource2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBinSource2.Location = new System.Drawing.Point(31, 49);
+            this.lblBinSource2.Location = new System.Drawing.Point(41, 60);
+            this.lblBinSource2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBinSource2.Name = "lblBinSource2";
-            this.lblBinSource2.Size = new System.Drawing.Size(51, 15);
+            this.lblBinSource2.Size = new System.Drawing.Size(61, 18);
             this.lblBinSource2.TabIndex = 25;
             this.lblBinSource2.Text = "Binary 2";
             // 
@@ -930,9 +981,10 @@ namespace BlueJay
             this.txtBinSource2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtBinSource2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBinSource2.ForeColor = System.Drawing.Color.Navy;
-            this.txtBinSource2.Location = new System.Drawing.Point(85, 47);
+            this.txtBinSource2.Location = new System.Drawing.Point(113, 58);
+            this.txtBinSource2.Margin = new System.Windows.Forms.Padding(4);
             this.txtBinSource2.Name = "txtBinSource2";
-            this.txtBinSource2.Size = new System.Drawing.Size(241, 20);
+            this.txtBinSource2.Size = new System.Drawing.Size(320, 23);
             this.txtBinSource2.TabIndex = 1;
             this.txtBinSource2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtBinSource2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBinSource2_KeyPress);
@@ -942,9 +994,10 @@ namespace BlueJay
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(31, 99);
+            this.label5.Location = new System.Drawing.Point(41, 122);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 15);
+            this.label5.Size = new System.Drawing.Size(57, 18);
             this.label5.TabIndex = 23;
             this.label5.Text = "Answer";
             // 
@@ -955,10 +1008,11 @@ namespace BlueJay
             this.txtBinaryAnswer.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtBinaryAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBinaryAnswer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtBinaryAnswer.Location = new System.Drawing.Point(85, 97);
+            this.txtBinaryAnswer.Location = new System.Drawing.Point(113, 119);
+            this.txtBinaryAnswer.Margin = new System.Windows.Forms.Padding(4);
             this.txtBinaryAnswer.Name = "txtBinaryAnswer";
             this.txtBinaryAnswer.ReadOnly = true;
-            this.txtBinaryAnswer.Size = new System.Drawing.Size(241, 20);
+            this.txtBinaryAnswer.Size = new System.Drawing.Size(321, 23);
             this.txtBinaryAnswer.TabIndex = 22;
             this.txtBinaryAnswer.TabStop = false;
             this.txtBinaryAnswer.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -976,10 +1030,11 @@ namespace BlueJay
             this.tabRoman.Controls.Add(this.txtRoman_Input);
             this.tabRoman.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabRoman.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.tabRoman.Location = new System.Drawing.Point(4, 22);
+            this.tabRoman.Location = new System.Drawing.Point(4, 25);
+            this.tabRoman.Margin = new System.Windows.Forms.Padding(4);
             this.tabRoman.Name = "tabRoman";
-            this.tabRoman.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRoman.Size = new System.Drawing.Size(621, 280);
+            this.tabRoman.Padding = new System.Windows.Forms.Padding(4);
+            this.tabRoman.Size = new System.Drawing.Size(831, 348);
             this.tabRoman.TabIndex = 2;
             this.tabRoman.Text = "Roman";
             // 
@@ -988,9 +1043,10 @@ namespace BlueJay
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Yellow;
-            this.label19.Location = new System.Drawing.Point(129, 148);
+            this.label19.Location = new System.Drawing.Point(172, 182);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(177, 16);
+            this.label19.Size = new System.Drawing.Size(232, 20);
             this.label19.TabIndex = 33;
             this.label19.Text = "NOTE: This tab is just for fun.";
             // 
@@ -999,9 +1055,10 @@ namespace BlueJay
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Yellow;
-            this.label17.Location = new System.Drawing.Point(129, 127);
+            this.label17.Location = new System.Drawing.Point(172, 156);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(191, 17);
+            this.label17.Size = new System.Drawing.Size(225, 20);
             this.label17.TabIndex = 32;
             this.label17.Text = "or roman numerals to integer";
             // 
@@ -1010,9 +1067,10 @@ namespace BlueJay
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Yellow;
-            this.label16.Location = new System.Drawing.Point(129, 110);
+            this.label16.Location = new System.Drawing.Point(172, 135);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(372, 17);
+            this.label16.Size = new System.Drawing.Size(441, 20);
             this.label16.TabIndex = 32;
             this.label16.Text = "Use this tab to convert from an integer to roman numerals";
             // 
@@ -1020,9 +1078,10 @@ namespace BlueJay
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(145, 69);
+            this.label15.Location = new System.Drawing.Point(193, 85);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 15);
+            this.label15.Size = new System.Drawing.Size(54, 18);
             this.label15.TabIndex = 31;
             this.label15.Text = "Result:";
             // 
@@ -1030,9 +1089,10 @@ namespace BlueJay
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(151, 34);
+            this.label14.Location = new System.Drawing.Point(201, 42);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(37, 15);
+            this.label14.Size = new System.Drawing.Size(43, 18);
             this.label14.TabIndex = 31;
             this.label14.Text = "Input:";
             // 
@@ -1042,9 +1102,11 @@ namespace BlueJay
             this.groupBox3.Controls.Add(this.btnRoman_Clear);
             this.groupBox3.Controls.Add(this.btnRoman_Calculate);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox3.Location = new System.Drawing.Point(33, 185);
+            this.groupBox3.Location = new System.Drawing.Point(44, 228);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(548, 75);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(731, 92);
             this.groupBox3.TabIndex = 30;
             this.groupBox3.TabStop = false;
             // 
@@ -1054,9 +1116,10 @@ namespace BlueJay
             this.btnRoman_Clear.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnRoman_Clear.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoman_Clear.ForeColor = System.Drawing.Color.Black;
-            this.btnRoman_Clear.Location = new System.Drawing.Point(10, 19);
+            this.btnRoman_Clear.Location = new System.Drawing.Point(13, 23);
+            this.btnRoman_Clear.Margin = new System.Windows.Forms.Padding(4);
             this.btnRoman_Clear.Name = "btnRoman_Clear";
-            this.btnRoman_Clear.Size = new System.Drawing.Size(89, 23);
+            this.btnRoman_Clear.Size = new System.Drawing.Size(119, 28);
             this.btnRoman_Clear.TabIndex = 2;
             this.btnRoman_Clear.Text = "Clear";
             this.btnRoman_Clear.UseVisualStyleBackColor = true;
@@ -1069,9 +1132,10 @@ namespace BlueJay
             this.btnRoman_Calculate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnRoman_Calculate.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoman_Calculate.ForeColor = System.Drawing.Color.Black;
-            this.btnRoman_Calculate.Location = new System.Drawing.Point(437, 19);
+            this.btnRoman_Calculate.Location = new System.Drawing.Point(583, 23);
+            this.btnRoman_Calculate.Margin = new System.Windows.Forms.Padding(4);
             this.btnRoman_Calculate.Name = "btnRoman_Calculate";
-            this.btnRoman_Calculate.Size = new System.Drawing.Size(89, 23);
+            this.btnRoman_Calculate.Size = new System.Drawing.Size(119, 28);
             this.btnRoman_Calculate.TabIndex = 1;
             this.btnRoman_Calculate.Text = "Calculate";
             this.btnRoman_Calculate.UseVisualStyleBackColor = true;
@@ -1085,10 +1149,11 @@ namespace BlueJay
             this.txtRoman_Result.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtRoman_Result.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRoman_Result.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtRoman_Result.Location = new System.Drawing.Point(195, 66);
+            this.txtRoman_Result.Location = new System.Drawing.Point(260, 81);
+            this.txtRoman_Result.Margin = new System.Windows.Forms.Padding(4);
             this.txtRoman_Result.Name = "txtRoman_Result";
             this.txtRoman_Result.ReadOnly = true;
-            this.txtRoman_Result.Size = new System.Drawing.Size(250, 23);
+            this.txtRoman_Result.Size = new System.Drawing.Size(333, 26);
             this.txtRoman_Result.TabIndex = 1;
             this.txtRoman_Result.TabStop = false;
             // 
@@ -1097,37 +1162,41 @@ namespace BlueJay
             this.txtRoman_Input.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtRoman_Input.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtRoman_Input.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRoman_Input.Location = new System.Drawing.Point(195, 31);
+            this.txtRoman_Input.Location = new System.Drawing.Point(260, 38);
+            this.txtRoman_Input.Margin = new System.Windows.Forms.Padding(4);
             this.txtRoman_Input.Name = "txtRoman_Input";
-            this.txtRoman_Input.Size = new System.Drawing.Size(250, 23);
+            this.txtRoman_Input.Size = new System.Drawing.Size(332, 26);
             this.txtRoman_Input.TabIndex = 0;
             this.txtRoman_Input.TextChanged += new System.EventHandler(this.txtRoman_Input_TextChanged);
             this.txtRoman_Input.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRoman_Input_KeyPress);
             // 
-            // tabWeight
+            // tabMass
             // 
-            this.tabWeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tabWeight.Controls.Add(this.lblMassResult);
-            this.tabWeight.Controls.Add(this.lblMassTo);
-            this.tabWeight.Controls.Add(this.lblMassFrom);
-            this.tabWeight.Controls.Add(this.txtMassResults);
-            this.tabWeight.Controls.Add(this.cboMassTo);
-            this.tabWeight.Controls.Add(this.cboMassFrom);
-            this.tabWeight.Controls.Add(this.gpbMassControls);
-            this.tabWeight.Location = new System.Drawing.Point(4, 22);
-            this.tabWeight.Name = "tabWeight";
-            this.tabWeight.Padding = new System.Windows.Forms.Padding(3);
-            this.tabWeight.Size = new System.Drawing.Size(621, 280);
-            this.tabWeight.TabIndex = 3;
-            this.tabWeight.Text = "Weight";
+            this.tabMass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.tabMass.Controls.Add(this.txtMassInput);
+            this.tabMass.Controls.Add(this.lblMassResult);
+            this.tabMass.Controls.Add(this.lblMassTo);
+            this.tabMass.Controls.Add(this.lblMassFrom);
+            this.tabMass.Controls.Add(this.txtMassResults);
+            this.tabMass.Controls.Add(this.cboMassTo);
+            this.tabMass.Controls.Add(this.cboMassFrom);
+            this.tabMass.Controls.Add(this.gpbMassControls);
+            this.tabMass.Location = new System.Drawing.Point(4, 25);
+            this.tabMass.Margin = new System.Windows.Forms.Padding(4);
+            this.tabMass.Name = "tabMass";
+            this.tabMass.Padding = new System.Windows.Forms.Padding(4);
+            this.tabMass.Size = new System.Drawing.Size(831, 348);
+            this.tabMass.TabIndex = 3;
+            this.tabMass.Text = "Mass";
             // 
             // lblMassResult
             // 
             this.lblMassResult.AutoSize = true;
             this.lblMassResult.ForeColor = System.Drawing.Color.White;
-            this.lblMassResult.Location = new System.Drawing.Point(148, 122);
+            this.lblMassResult.Location = new System.Drawing.Point(197, 150);
+            this.lblMassResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMassResult.Name = "lblMassResult";
-            this.lblMassResult.Size = new System.Drawing.Size(40, 13);
+            this.lblMassResult.Size = new System.Drawing.Size(52, 17);
             this.lblMassResult.TabIndex = 5;
             this.lblMassResult.Text = "Result:";
             // 
@@ -1135,9 +1204,10 @@ namespace BlueJay
             // 
             this.lblMassTo.AutoSize = true;
             this.lblMassTo.ForeColor = System.Drawing.Color.White;
-            this.lblMassTo.Location = new System.Drawing.Point(148, 70);
+            this.lblMassTo.Location = new System.Drawing.Point(197, 86);
+            this.lblMassTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMassTo.Name = "lblMassTo";
-            this.lblMassTo.Size = new System.Drawing.Size(23, 13);
+            this.lblMassTo.Size = new System.Drawing.Size(29, 17);
             this.lblMassTo.TabIndex = 5;
             this.lblMassTo.Text = "To:";
             // 
@@ -1145,19 +1215,21 @@ namespace BlueJay
             // 
             this.lblMassFrom.AutoSize = true;
             this.lblMassFrom.ForeColor = System.Drawing.Color.White;
-            this.lblMassFrom.Location = new System.Drawing.Point(148, 20);
+            this.lblMassFrom.Location = new System.Drawing.Point(197, 25);
+            this.lblMassFrom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMassFrom.Name = "lblMassFrom";
-            this.lblMassFrom.Size = new System.Drawing.Size(33, 13);
+            this.lblMassFrom.Size = new System.Drawing.Size(44, 17);
             this.lblMassFrom.TabIndex = 5;
             this.lblMassFrom.Text = "From:";
             // 
             // txtMassResults
             // 
             this.txtMassResults.BackColor = System.Drawing.Color.Gray;
-            this.txtMassResults.Location = new System.Drawing.Point(141, 138);
+            this.txtMassResults.Location = new System.Drawing.Point(188, 170);
+            this.txtMassResults.Margin = new System.Windows.Forms.Padding(4);
             this.txtMassResults.Name = "txtMassResults";
             this.txtMassResults.ReadOnly = true;
-            this.txtMassResults.Size = new System.Drawing.Size(377, 20);
+            this.txtMassResults.Size = new System.Drawing.Size(501, 22);
             this.txtMassResults.TabIndex = 1;
             // 
             // cboMassTo
@@ -1174,9 +1246,10 @@ namespace BlueJay
             "Stones (st)",
             "imperial ton (UK)",
             "imperial ton (US)"});
-            this.cboMassTo.Location = new System.Drawing.Point(141, 86);
+            this.cboMassTo.Location = new System.Drawing.Point(188, 106);
+            this.cboMassTo.Margin = new System.Windows.Forms.Padding(4);
             this.cboMassTo.Name = "cboMassTo";
-            this.cboMassTo.Size = new System.Drawing.Size(377, 21);
+            this.cboMassTo.Size = new System.Drawing.Size(503, 24);
             this.cboMassTo.TabIndex = 0;
             this.cboMassTo.Text = "Select To:";
             // 
@@ -1194,9 +1267,10 @@ namespace BlueJay
             "Stones (st)",
             "imperial ton (UK)",
             "imperial ton (US)"});
-            this.cboMassFrom.Location = new System.Drawing.Point(141, 36);
+            this.cboMassFrom.Location = new System.Drawing.Point(188, 44);
+            this.cboMassFrom.Margin = new System.Windows.Forms.Padding(4);
             this.cboMassFrom.Name = "cboMassFrom";
-            this.cboMassFrom.Size = new System.Drawing.Size(377, 21);
+            this.cboMassFrom.Size = new System.Drawing.Size(185, 24);
             this.cboMassFrom.TabIndex = 0;
             this.cboMassFrom.Text = "Select From:";
             // 
@@ -1204,18 +1278,21 @@ namespace BlueJay
             // 
             this.gpbMassControls.Controls.Add(this.btnMassClear);
             this.gpbMassControls.Controls.Add(this.btnMassCalculate);
-            this.gpbMassControls.Location = new System.Drawing.Point(141, 185);
+            this.gpbMassControls.Location = new System.Drawing.Point(188, 228);
+            this.gpbMassControls.Margin = new System.Windows.Forms.Padding(4);
             this.gpbMassControls.Name = "gpbMassControls";
-            this.gpbMassControls.Size = new System.Drawing.Size(377, 66);
+            this.gpbMassControls.Padding = new System.Windows.Forms.Padding(4);
+            this.gpbMassControls.Size = new System.Drawing.Size(503, 81);
             this.gpbMassControls.TabIndex = 4;
             this.gpbMassControls.TabStop = false;
             // 
             // btnMassClear
             // 
             this.btnMassClear.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMassClear.Location = new System.Drawing.Point(29, 19);
+            this.btnMassClear.Location = new System.Drawing.Point(39, 23);
+            this.btnMassClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnMassClear.Name = "btnMassClear";
-            this.btnMassClear.Size = new System.Drawing.Size(83, 30);
+            this.btnMassClear.Size = new System.Drawing.Size(111, 37);
             this.btnMassClear.TabIndex = 3;
             this.btnMassClear.Text = "Clear";
             this.btnMassClear.UseVisualStyleBackColor = true;
@@ -1224,9 +1301,10 @@ namespace BlueJay
             // btnMassCalculate
             // 
             this.btnMassCalculate.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMassCalculate.Location = new System.Drawing.Point(259, 19);
+            this.btnMassCalculate.Location = new System.Drawing.Point(345, 23);
+            this.btnMassCalculate.Margin = new System.Windows.Forms.Padding(4);
             this.btnMassCalculate.Name = "btnMassCalculate";
-            this.btnMassCalculate.Size = new System.Drawing.Size(89, 30);
+            this.btnMassCalculate.Size = new System.Drawing.Size(119, 37);
             this.btnMassCalculate.TabIndex = 2;
             this.btnMassCalculate.Text = "Calculate";
             this.btnMassCalculate.UseVisualStyleBackColor = true;
@@ -1235,21 +1313,33 @@ namespace BlueJay
             // tabPressure
             // 
             this.tabPressure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tabPressure.Location = new System.Drawing.Point(4, 22);
+            this.tabPressure.Location = new System.Drawing.Point(4, 25);
+            this.tabPressure.Margin = new System.Windows.Forms.Padding(4);
             this.tabPressure.Name = "tabPressure";
-            this.tabPressure.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPressure.Size = new System.Drawing.Size(621, 280);
+            this.tabPressure.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPressure.Size = new System.Drawing.Size(831, 348);
             this.tabPressure.TabIndex = 4;
             this.tabPressure.Text = "Pressure";
             // 
             // tabArea
             // 
             this.tabArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tabArea.Location = new System.Drawing.Point(4, 22);
+            this.tabArea.Location = new System.Drawing.Point(4, 25);
+            this.tabArea.Margin = new System.Windows.Forms.Padding(4);
             this.tabArea.Name = "tabArea";
-            this.tabArea.Size = new System.Drawing.Size(621, 280);
+            this.tabArea.Size = new System.Drawing.Size(831, 348);
             this.tabArea.TabIndex = 5;
             this.tabArea.Text = "Area";
+            // 
+            // tabTemperature
+            // 
+            this.tabTemperature.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.tabTemperature.Location = new System.Drawing.Point(4, 25);
+            this.tabTemperature.Margin = new System.Windows.Forms.Padding(4);
+            this.tabTemperature.Name = "tabTemperature";
+            this.tabTemperature.Size = new System.Drawing.Size(831, 348);
+            this.tabTemperature.TabIndex = 6;
+            this.tabTemperature.Text = "Temperature";
             // 
             // groupBox2
             // 
@@ -1300,7 +1390,7 @@ namespace BlueJay
             this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.checkBox1.Location = new System.Drawing.Point(108, 48);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(42, 17);
+            this.checkBox1.Size = new System.Drawing.Size(51, 21);
             this.checkBox1.TabIndex = 11;
             this.checkBox1.Text = "OR";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -1316,7 +1406,7 @@ namespace BlueJay
             "<< Left"});
             this.comboBox1.Location = new System.Drawing.Point(202, 92);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(98, 21);
+            this.comboBox1.Size = new System.Drawing.Size(98, 25);
             this.comboBox1.TabIndex = 8;
             this.comboBox1.Text = ">> Right";
             // 
@@ -1326,7 +1416,7 @@ namespace BlueJay
             this.checkBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.checkBox2.Location = new System.Drawing.Point(108, 71);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(49, 17);
+            this.checkBox2.Size = new System.Drawing.Size(59, 21);
             this.checkBox2.TabIndex = 5;
             this.checkBox2.Text = "AND";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -1337,7 +1427,7 @@ namespace BlueJay
             this.checkBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.checkBox3.Location = new System.Drawing.Point(108, 23);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(49, 17);
+            this.checkBox3.Size = new System.Drawing.Size(60, 21);
             this.checkBox3.TabIndex = 4;
             this.checkBox3.Text = "XOR";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -1347,7 +1437,7 @@ namespace BlueJay
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(199, 45);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 13);
+            this.label6.Size = new System.Drawing.Size(56, 17);
             this.label6.TabIndex = 6;
             this.label6.Text = "Bit Shift";
             // 
@@ -1366,7 +1456,7 @@ namespace BlueJay
             this.comboBox2.Location = new System.Drawing.Point(202, 61);
             this.comboBox2.MaxDropDownItems = 5;
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(98, 21);
+            this.comboBox2.Size = new System.Drawing.Size(98, 25);
             this.comboBox2.TabIndex = 7;
             this.comboBox2.Text = "1";
             // 
@@ -1375,7 +1465,7 @@ namespace BlueJay
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(202, 23);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(98, 17);
+            this.checkBox4.Size = new System.Drawing.Size(126, 21);
             this.checkBox4.TabIndex = 6;
             this.checkBox4.Text = "Enable Bit Shift";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -1386,7 +1476,7 @@ namespace BlueJay
             this.checkBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.checkBox5.Location = new System.Drawing.Point(18, 94);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(61, 17);
+            this.checkBox5.Size = new System.Drawing.Size(77, 21);
             this.checkBox5.TabIndex = 3;
             this.checkBox5.Text = "Multiply";
             this.checkBox5.UseVisualStyleBackColor = true;
@@ -1397,7 +1487,7 @@ namespace BlueJay
             this.checkBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.checkBox6.Location = new System.Drawing.Point(18, 71);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(56, 17);
+            this.checkBox6.Size = new System.Drawing.Size(69, 21);
             this.checkBox6.TabIndex = 2;
             this.checkBox6.Text = "Divide";
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -1408,7 +1498,7 @@ namespace BlueJay
             this.checkBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.checkBox7.Location = new System.Drawing.Point(18, 48);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(66, 17);
+            this.checkBox7.Size = new System.Drawing.Size(83, 21);
             this.checkBox7.TabIndex = 1;
             this.checkBox7.Text = "Subtract";
             this.checkBox7.UseVisualStyleBackColor = true;
@@ -1419,7 +1509,7 @@ namespace BlueJay
             this.checkBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.checkBox8.Location = new System.Drawing.Point(18, 23);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(45, 17);
+            this.checkBox8.Size = new System.Drawing.Size(55, 21);
             this.checkBox8.TabIndex = 0;
             this.checkBox8.Text = "Add";
             this.checkBox8.UseVisualStyleBackColor = true;
@@ -1441,7 +1531,7 @@ namespace BlueJay
             this.textBox1.ForeColor = System.Drawing.Color.Navy;
             this.textBox1.Location = new System.Drawing.Point(62, 21);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 20);
+            this.textBox1.Size = new System.Drawing.Size(232, 23);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1462,7 +1552,7 @@ namespace BlueJay
             this.textBox2.ForeColor = System.Drawing.Color.Navy;
             this.textBox2.Location = new System.Drawing.Point(62, 47);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(232, 20);
+            this.textBox2.Size = new System.Drawing.Size(232, 23);
             this.textBox2.TabIndex = 1;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1485,25 +1575,23 @@ namespace BlueJay
             this.textBox3.Location = new System.Drawing.Point(62, 97);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(232, 20);
+            this.textBox3.Size = new System.Drawing.Size(232, 23);
             this.textBox3.TabIndex = 22;
             this.textBox3.TabStop = false;
             // 
-            // tabTemperature
+            // txtMassInput
             // 
-            this.tabTemperature.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tabTemperature.Location = new System.Drawing.Point(4, 22);
-            this.tabTemperature.Name = "tabTemperature";
-            this.tabTemperature.Size = new System.Drawing.Size(621, 280);
-            this.tabTemperature.TabIndex = 6;
-            this.tabTemperature.Text = "Temperature";
+            this.txtMassInput.Location = new System.Drawing.Point(380, 44);
+            this.txtMassInput.Name = "txtMassInput";
+            this.txtMassInput.Size = new System.Drawing.Size(311, 22);
+            this.txtMassInput.TabIndex = 6;
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(653, 378);
+            this.ClientSize = new System.Drawing.Size(871, 465);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -1511,6 +1599,7 @@ namespace BlueJay
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Main";
@@ -1533,8 +1622,8 @@ namespace BlueJay
             this.tabRoman.ResumeLayout(false);
             this.tabRoman.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.tabWeight.ResumeLayout(false);
-            this.tabWeight.PerformLayout();
+            this.tabMass.ResumeLayout(false);
+            this.tabMass.PerformLayout();
             this.gpbMassControls.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -1639,7 +1728,7 @@ namespace BlueJay
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.CheckBox cbxJOIN;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TabPage tabWeight;
+        private System.Windows.Forms.TabPage tabMass;
         private System.Windows.Forms.TextBox txtMassResults;
         private System.Windows.Forms.ComboBox cboMassTo;
         private System.Windows.Forms.ComboBox cboMassFrom;
@@ -1652,6 +1741,7 @@ namespace BlueJay
         private System.Windows.Forms.TabPage tabPressure;
         private System.Windows.Forms.TabPage tabArea;
         private System.Windows.Forms.TabPage tabTemperature;
+        private System.Windows.Forms.TextBox txtMassInput;
     }
 }
 
