@@ -104,6 +104,7 @@ namespace BlueJay
             this.txtRoman_Result = new System.Windows.Forms.TextBox();
             this.txtRoman_Input = new System.Windows.Forms.TextBox();
             this.tabMass = new System.Windows.Forms.TabPage();
+            this.txtMassInput = new System.Windows.Forms.TextBox();
             this.lblMassResult = new System.Windows.Forms.Label();
             this.lblMassTo = new System.Windows.Forms.Label();
             this.lblMassFrom = new System.Windows.Forms.Label();
@@ -136,7 +137,7 @@ namespace BlueJay
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.txtMassInput = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -163,7 +164,7 @@ namespace BlueJay
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip1.Size = new System.Drawing.Size(871, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(871, 28);
             this.menuStrip1.TabIndex = 32;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -174,13 +175,13 @@ namespace BlueJay
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -192,20 +193,20 @@ namespace BlueJay
             this.BinaryLimit_32bit_ToolStripMenuItem});
             this.toolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(76, 26);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(76, 24);
             this.toolStripMenuItem1.Text = "Settings";
             // 
             // BinaryLimit_8bit_ToolStripMenuItem
             // 
             this.BinaryLimit_8bit_ToolStripMenuItem.Name = "BinaryLimit_8bit_ToolStripMenuItem";
-            this.BinaryLimit_8bit_ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.BinaryLimit_8bit_ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.BinaryLimit_8bit_ToolStripMenuItem.Text = "Binary Limit 8 bit";
             this.BinaryLimit_8bit_ToolStripMenuItem.Click += new System.EventHandler(this.BinaryLimit_8bit_ToolStripMenuItem_Click);
             // 
             // BinaryLimit_16bit_ToolStripMenuItem
             // 
             this.BinaryLimit_16bit_ToolStripMenuItem.Name = "BinaryLimit_16bit_ToolStripMenuItem";
-            this.BinaryLimit_16bit_ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.BinaryLimit_16bit_ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.BinaryLimit_16bit_ToolStripMenuItem.Text = "Binary Limit 16 bit";
             this.BinaryLimit_16bit_ToolStripMenuItem.Click += new System.EventHandler(this.BinaryLimit_16bit_ToolStripMenuItem_Click);
             // 
@@ -213,7 +214,7 @@ namespace BlueJay
             // 
             this.BinaryLimit_32bit_ToolStripMenuItem.Name = "BinaryLimit_32bit_ToolStripMenuItem";
             this.BinaryLimit_32bit_ToolStripMenuItem.ShowShortcutKeys = false;
-            this.BinaryLimit_32bit_ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.BinaryLimit_32bit_ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.BinaryLimit_32bit_ToolStripMenuItem.Text = "Binary Limit 32 bit";
             this.BinaryLimit_32bit_ToolStripMenuItem.Click += new System.EventHandler(this.BinaryLimit_32bit_ToolStripMenuItem_Click);
             // 
@@ -226,25 +227,25 @@ namespace BlueJay
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // f1ToolStripMenuItem
             // 
             this.f1ToolStripMenuItem.Name = "f1ToolStripMenuItem";
-            this.f1ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.f1ToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.f1ToolStripMenuItem.Text = "&F1";
             this.f1ToolStripMenuItem.Click += new System.EventHandler(this.f1ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(130, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -1173,6 +1174,7 @@ namespace BlueJay
             // tabMass
             // 
             this.tabMass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.tabMass.Controls.Add(this.label20);
             this.tabMass.Controls.Add(this.txtMassInput);
             this.tabMass.Controls.Add(this.lblMassResult);
             this.tabMass.Controls.Add(this.lblMassTo);
@@ -1189,6 +1191,13 @@ namespace BlueJay
             this.tabMass.TabIndex = 3;
             this.tabMass.Text = "Mass";
             // 
+            // txtMassInput
+            // 
+            this.txtMassInput.Location = new System.Drawing.Point(188, 44);
+            this.txtMassInput.Name = "txtMassInput";
+            this.txtMassInput.Size = new System.Drawing.Size(503, 22);
+            this.txtMassInput.TabIndex = 6;
+            // 
             // lblMassResult
             // 
             this.lblMassResult.AutoSize = true;
@@ -1204,7 +1213,7 @@ namespace BlueJay
             // 
             this.lblMassTo.AutoSize = true;
             this.lblMassTo.ForeColor = System.Drawing.Color.White;
-            this.lblMassTo.Location = new System.Drawing.Point(197, 86);
+            this.lblMassTo.Location = new System.Drawing.Point(479, 84);
             this.lblMassTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMassTo.Name = "lblMassTo";
             this.lblMassTo.Size = new System.Drawing.Size(29, 17);
@@ -1215,7 +1224,7 @@ namespace BlueJay
             // 
             this.lblMassFrom.AutoSize = true;
             this.lblMassFrom.ForeColor = System.Drawing.Color.White;
-            this.lblMassFrom.Location = new System.Drawing.Point(197, 25);
+            this.lblMassFrom.Location = new System.Drawing.Point(197, 86);
             this.lblMassFrom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMassFrom.Name = "lblMassFrom";
             this.lblMassFrom.Size = new System.Drawing.Size(44, 17);
@@ -1224,7 +1233,7 @@ namespace BlueJay
             // 
             // txtMassResults
             // 
-            this.txtMassResults.BackColor = System.Drawing.Color.Gray;
+            this.txtMassResults.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtMassResults.Location = new System.Drawing.Point(188, 170);
             this.txtMassResults.Margin = new System.Windows.Forms.Padding(4);
             this.txtMassResults.Name = "txtMassResults";
@@ -1235,6 +1244,7 @@ namespace BlueJay
             // cboMassTo
             // 
             this.cboMassTo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cboMassTo.Enabled = false;
             this.cboMassTo.FormattingEnabled = true;
             this.cboMassTo.Items.AddRange(new object[] {
             "milligrams (mg)",
@@ -1246,10 +1256,10 @@ namespace BlueJay
             "Stones (st)",
             "imperial ton (UK)",
             "imperial ton (US)"});
-            this.cboMassTo.Location = new System.Drawing.Point(188, 106);
+            this.cboMassTo.Location = new System.Drawing.Point(467, 105);
             this.cboMassTo.Margin = new System.Windows.Forms.Padding(4);
             this.cboMassTo.Name = "cboMassTo";
-            this.cboMassTo.Size = new System.Drawing.Size(503, 24);
+            this.cboMassTo.Size = new System.Drawing.Size(224, 24);
             this.cboMassTo.TabIndex = 0;
             this.cboMassTo.Text = "Select To:";
             // 
@@ -1267,12 +1277,13 @@ namespace BlueJay
             "Stones (st)",
             "imperial ton (UK)",
             "imperial ton (US)"});
-            this.cboMassFrom.Location = new System.Drawing.Point(188, 44);
+            this.cboMassFrom.Location = new System.Drawing.Point(188, 105);
             this.cboMassFrom.Margin = new System.Windows.Forms.Padding(4);
             this.cboMassFrom.Name = "cboMassFrom";
-            this.cboMassFrom.Size = new System.Drawing.Size(185, 24);
+            this.cboMassFrom.Size = new System.Drawing.Size(230, 24);
             this.cboMassFrom.TabIndex = 0;
             this.cboMassFrom.Text = "Select From:";
+            this.cboMassFrom.SelectedIndexChanged += new System.EventHandler(this.cboMassFrom_SelectedIndexChanged);
             // 
             // gpbMassControls
             // 
@@ -1579,12 +1590,15 @@ namespace BlueJay
             this.textBox3.TabIndex = 22;
             this.textBox3.TabStop = false;
             // 
-            // txtMassInput
+            // label20
             // 
-            this.txtMassInput.Location = new System.Drawing.Point(380, 44);
-            this.txtMassInput.Name = "txtMassInput";
-            this.txtMassInput.Size = new System.Drawing.Size(311, 22);
-            this.txtMassInput.TabIndex = 6;
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(200, 21);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(39, 17);
+            this.label20.TabIndex = 7;
+            this.label20.Text = "Input";
             // 
             // Main
             // 
@@ -1742,6 +1756,7 @@ namespace BlueJay
         private System.Windows.Forms.TabPage tabArea;
         private System.Windows.Forms.TabPage tabTemperature;
         private System.Windows.Forms.TextBox txtMassInput;
+        private System.Windows.Forms.Label label20;
     }
 }
 

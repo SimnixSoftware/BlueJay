@@ -1853,19 +1853,16 @@ public Main()
                 case 0: //from milligrams
                     switch (iTo)
                     {
-                        case 0: //to milligrams
-                            txtMassResults.Text = txtMassInput.Text;
-                            break;
-                        case 1: //to grams
+                        case 0: //to grams
                             txtMassResults.Text = (Math.Round(float.Parse(txtMassInput.Text) / iThousand, iRound)).ToString();
                             break;
-                        case 2: //to kilograms
+                        case 1: //to kilograms
                             txtMassResults.Text = (Math.Round(float.Parse(txtMassInput.Text) / iMillion, iRound)).ToString();
                             break;
-                        case 3: //to metric ton (tonne)
+                        case 2: //to metric ton (tonne)
                             txtMassResults.Text = (Math.Round(float.Parse(txtMassInput.Text) / iThouMill, iRound)).ToString();
                             break;
-                        case 4: //to ounce
+                        case 3: //to ounce
                             txtMassResults.Text = (Math.Round(double.Parse(txtMassInput.Text) * 0.00003527, iRound)).ToString();
                             break;
                     }
@@ -1883,8 +1880,25 @@ public Main()
             txtMassInput.Text = "";
             cboMassTo.Text = "Select To";
             txtMassResults.Text = "";
+            cboMassTo.Items.Clear();
+            cboMassTo.Enabled = false;
         }
 
+        private void cboMassFrom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboMassTo.Enabled = true;
+            cboMassTo.Items.Clear();
+
+            if(cboMassFrom.SelectedIndex == 0)
+            {
+                cboMassTo.Items.Add("Grams (g)");
+                cboMassTo.Items.Add("Kilograms (Kg)");
+                cboMassTo.Items.Add("Metric Ton (t)");
+                cboMassTo.Items.Add("Ounce (oz)");
+                cboMassTo.Items.Add("Pounds (lbs)");
+                cboMassTo.Items.Add("Stones (st");
+            }
+        }
 
         #endregion
     }
