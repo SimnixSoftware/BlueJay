@@ -10,7 +10,7 @@ AppSupportURL=http://www.simnix.com
 AppUpdatesURL=http://www.simnix.com
 DefaultDirName={pf}\Simnix Software\BlueJay
 DefaultGroupName=Simnix Software\BlueJay
-OutputDir=C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Installation\Publish
+OutputDir=C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Installation\Publish\
 OutputBaseFilename=bluejay-setup
 SetupIconFile=C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Source\Pictures\Icon1.ico
 Compression=lzma
@@ -26,7 +26,7 @@ EnableDirDoesntExistWarning=false
 AppCopyright=Copyright 2011 © All Rights Reserved
 UserInfoPage=false
 RestartIfNeededByRun=false
-MinVersion=,5.0.2195
+; MinVersion=,5.0.2195
 LicenseFile=C:\Users\Simon\Documents\Development Projects\Visual Studio\csBluejay\Installation\Licence.txt
 TimeStampsInUTC=true
 

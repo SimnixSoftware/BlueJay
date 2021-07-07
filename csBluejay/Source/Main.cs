@@ -1843,6 +1843,7 @@ public Main()
             int iFrom = cboMassFrom.SelectedIndex;
             int iTo = cboMassTo.SelectedIndex;
             int iRound = 8;
+            int iHunderd = 100;
             int iThousand = 1000;
             int iMillion = 1000000;
             int iThouMill = 1000000000;
@@ -1863,13 +1864,41 @@ public Main()
                             txtMassResults.Text = (Math.Round(float.Parse(txtMassInput.Text) / iThouMill, iRound)).ToString();
                             break;
                         case 3: //to ounce
-                            txtMassResults.Text = (Math.Round(double.Parse(txtMassInput.Text) * 0.00003527, iRound)).ToString();
+                            txtMassResults.Text = (Math.Round(double.Parse(txtMassInput.Text) / 28350, iRound)).ToString();
+                            break;
+                        case 4: //to pound
+                            txtMassResults.Text = (Math.Round(double.Parse(txtMassInput.Text) / 453592, iRound)).ToString();
+                            break;
+                        case 5: //to stone
+                            txtMassResults.Text = (Math.Round(double.Parse(txtMassInput.Text) / 6.35e+6, iRound)).ToString();
                             break;
                     }
                         break;
                 case 1: //from grams
+                    switch (iTo)
+                    {
+                        case 0: //to milligrams
+                            txtMassResults.Text = (Math.Round(float.Parse(txtMassInput.Text) * iThousand, iRound)).ToString();
+                            break;
+                        case 1: //to kilograms
+                            txtMassResults.Text = (Math.Round(float.Parse(txtMassInput.Text) / iThousand, iRound)).ToString();
+                            break;
+                        case 2: //to metric ton (tonne)
+                            txtMassResults.Text = (Math.Round(float.Parse(txtMassInput.Text) / iThouMill, iRound)).ToString();
+                            break;
+                        case 3: //to ounce
+                            txtMassResults.Text = (Math.Round(double.Parse(txtMassInput.Text) / 28.35, iRound)).ToString();
+                            break;
+                        case 4: // to pound
+                            txtMassResults.Text = (Math.Round(double.Parse(txtMassInput.Text) / 453.67, iRound)).ToString();
+                            break;
+                        case 5: //to stone
+                            txtMassResults.Text = (Math.Round(double.Parse(txtMassInput.Text) / 6350, iRound)).ToString();
+                            break;
 
+                    }
                     break;
+                    
             }
             
         }
@@ -1898,8 +1927,23 @@ public Main()
                 cboMassTo.Items.Add("Pounds (lbs)");
                 cboMassTo.Items.Add("Stones (st");
             }
+
+            if (cboMassFrom.SelectedIndex == 1)
+            {
+                cboMassTo.Items.Add("Milligrams mg");
+                cboMassTo.Items.Add("Kilograms (Kg)");
+                cboMassTo.Items.Add("Metric Ton (t)");
+                cboMassTo.Items.Add("Ounce (oz)");
+                cboMassTo.Items.Add("Pounds (lbs)");
+                cboMassTo.Items.Add("Stones (st");
+            }
         }
 
         #endregion
+
+        private void cboMassTo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
